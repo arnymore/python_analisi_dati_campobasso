@@ -146,7 +146,7 @@ for b in bars:
     axes[0, 1].text(b.get_x() + b.get_width()/2, b.get_height() + 10, f"{b.get_height():.0f}k", ha="center", fontsize=8, fontweight="bold")
 
 # [1, 0]: Boxplot Sconti per Canale
-sns.boxplot(data=df, x="Canale_Vendita", y="Sconto_Perc", palette="Set2", ax=axes[1, 0])
+sns.boxplot(data=df, x="Canale_Vendita", y="Sconto_Perc", hue="Canale_Vendita", palette="Set2", legend=False, ax=axes[1, 0])
 axes[1, 0].set_title("3. Distribuzione Sconti Percentuali per Canale", fontweight="bold")
 axes[1, 0].set_xlabel("Canale di Vendita")
 axes[1, 0].set_ylabel("Sconto Applicato (%)")
