@@ -145,12 +145,20 @@ print("\n=== ESERCIZIO 3.5: Merge con Anagrafica e GroupBy ===")
 df_anagrafica = pd.read_excel(FILE_ROMA, sheet_name="Anagrafica_Clienti")
 df_anagrafica["Codice_Cliente"] = df_anagrafica["Codice_Cliente"].str.strip().str.upper()
 
+# Deduplicazione preventiva dell'anagrafica per garantire integrità relazionale 1:N
+df_anagrafica_clean = df_anagrafica.drop_duplicates(subset=["Codice_Cliente"]).copy()
+
+n_righe_prima = len(df_clean)
 df_merged = pd.merge(
     df_clean,
-    df_anagrafica[["Codice_Cliente", "Settore", "Citta_Sede", "Rating_Affidabilita"]],
+    df_anagrafica_clean[["Codice_Cliente", "Settore", "Citta_Sede", "Rating_Affidabilita"]],
     on="Codice_Cliente",
-    how="left"
+    how="left",
+    validate="many_to_one"
 )
+# Asserzione di qualità: il merge non deve moltiplicare le transazioni
+assert len(df_merged) == n_righe_prima, f"Errore integrità: {len(df_merged)} != {n_righe_prima}"
+
 df_merged["Settore"] = df_merged["Settore"].fillna("Non Specificato")
 
 report_settore = df_merged.groupby("Settore").agg(

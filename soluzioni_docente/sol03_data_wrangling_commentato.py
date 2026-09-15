@@ -190,20 +190,30 @@ df_clean["Fatturato_Netto"] = round(df_clean["Fatturato_Lordo_Ricalcolato"] - df
 # ---------------------------------------------------------------------------
 # LIVELLO 3 [DOCENTE]:
 # Eseguire il merge e spiegare la cardinalità: le transazioni sono 'Many' (N), i clienti in anagrafica sono 'One' (1).
-# Mostrare come arricchire il dataset con Settore merceologico e Rating di affidabilità creditizia.
+# Mostrare come l'uso di `validate="many_to_one"` e l'asserzione di forma garantiscano la non-proliferazione di record.
 
 print("\n=== ESERCIZIO 3.5: Merge con Anagrafica e GroupBy ===")
 df_anagrafica = pd.read_excel(FILE_ROMA, sheet_name="Anagrafica_Clienti")
 df_anagrafica["Codice_Cliente"] = df_anagrafica["Codice_Cliente"].astype(str).str.strip().str.upper()
 
+# LIVELLO 1 [TECNICO]: Deduplicazione anagrafica preventiva
+df_anagrafica_clean = df_anagrafica.drop_duplicates(subset=["Codice_Cliente"]).copy()
+
+n_righe_prima = len(df_clean)
+
 # LIVELLO 1 [TECNICO] & LIVELLO 2 [BUSINESS]:
 # Left Join tra le transazioni (tabella primaria) e l'anagrafica clienti (tabella lookup dimensionale).
 df_merged = pd.merge(
     df_clean,
-    df_anagrafica[["Codice_Cliente", "Settore", "Citta_Sede", "Rating_Affidabilita"]],
+    df_anagrafica_clean[["Codice_Cliente", "Settore", "Citta_Sede", "Rating_Affidabilita"]],
     on="Codice_Cliente",
-    how="left"
+    how="left",
+    validate="many_to_one"
 )
+
+# LIVELLO 3 [DOCENTE]: Asserzione di controllo qualità dei dati
+assert len(df_merged) == n_righe_prima, f"ERRORE CRITICO: Moltiplicazione righe rilevata ({len(df_merged)} != {n_righe_prima})!"
+
 df_merged["Settore"] = df_merged["Settore"].fillna("Non Specificato")
 
 # LIVELLO 4 [COLLEGAMENTO DIDATTICO]:

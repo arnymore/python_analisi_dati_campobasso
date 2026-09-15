@@ -169,16 +169,21 @@ def trasforma_dataset(df_raw, df_anagrafica):
     df["Valore_Sconto"] = round(df["Fatturato_Lordo"] * (df["Sconto_Perc"] / 100.0), 2)
     df["Fatturato_Netto"] = round(df["Fatturato_Lordo"] - df["Valore_Sconto"], 2)
     
-    # 5. Join relazionale con Anagrafica Clienti
+    # 5. Join relazionale con Anagrafica Clienti (con validazione m:1)
     df_anag = df_anagrafica.copy()
     df_anag["Codice_Cliente"] = df_anag["Codice_Cliente"].astype(str).str.strip().str.upper()
+    df_anag = df_anag.drop_duplicates(subset=["Codice_Cliente"]).copy()
     
+    n_righe_prev = len(df)
     df_master = pd.merge(
         df,
         df_anag[["Codice_Cliente", "Settore", "Citta_Sede", "Rating_Affidabilita"]],
         on="Codice_Cliente",
-        how="left"
+        how="left",
+        validate="many_to_one"
     )
+    assert len(df_master) == n_righe_prev, f"ERRORE CRITICO: Moltiplicazione righe nel merge ETL ({len(df_master)} != {n_righe_prev})!"
+    
     df_master["Settore"] = df_master["Settore"].fillna("Non Specificato")
     df_master["Citta_Sede"] = df_master["Citta_Sede"].fillna("Non Specificata")
     df_master["Rating_Affidabilita"] = df_master["Rating_Affidabilita"].fillna("N.D.")
