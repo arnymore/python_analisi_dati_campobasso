@@ -1,10 +1,13 @@
-# 🎬 PIANO SLIDE & STORYBOARD COMPLETO (100 SLIDE)
+# 🎬 PIANO SLIDE & STORYBOARD COMPLETO
 ## Corso: Laboratorio Python + Analisi Dati (22 Ore)
 **Docente: Arnaldo Morena** | ITIS Campobasso
 
+> [!TIP]
+> **Versione Ottimizzata Disponibile**: Consulta [`piano_slide_storyboard_v2.md`](piano_slide_storyboard_v2.md) per la versione didattica ottimizzata a **75 Slide** (+30% tempo laboratori, Modulo 7 in Live Demo).
+
 ---
 
-### STRUTTURA DEL CORSO & RIPARTIZIONE SLIDE
+### STRUTTURA DEL CORSO & RIPARTIZIONE SLIDE (VERSIONE ESTESA 100 SLIDE)
 * **Modulo 1 – Python Operativo per l'Analisi Dati** (2h) ➔ Slide 1 – 12 (12 slide)
 * **Modulo 2 – Pandas: Fondamenti e Manipolazione Dati** (4h) ➔ Slide 13 – 30 (18 slide)
 * **Modulo 3 – Data Wrangling, Pulizia e Integrazione** (3h) ➔ Slide 31 – 46 (16 slide)
