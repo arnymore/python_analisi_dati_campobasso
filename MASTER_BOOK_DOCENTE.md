@@ -1,6 +1,6 @@
 # 📘 MASTER BOOK DOCENTE: LABORATORIO PYTHON + ANALISI DATI
-## Manuale Unico Ufficiale di Conduzione, Regia d'Aula e Didattica Applicata (22 Ore)
-### Docente Ufficiale: Arnaldo Morena • ITIS Campobasso • Anno 2026
+### Manuale Unico Ufficiale di Conduzione, Regia d'Aula e Didattica Applicata (22 Ore)
+**Docente Responsabile:** Arnaldo Morena • **Istituzione:** ITIS Campobasso • **Anno Accademico:** 2026
 
 ---
 
@@ -8,56 +8,96 @@
 
 * **Denominazione Ufficiale:** Laboratorio Python + Analisi Dati
 * **Docente Responsabile:** Arnaldo Morena
-* **Istituzione Formativa:** ITIS Campobasso
-* **Durata Complessiva:** 22 Ore (1.320 minuti netti)
-* **Metodologia Didattica:** Hands-On Workshop (40% Spiegazione/Demo interattiva, 60% Laboratorio pratico autonomo)
-* **Caso Aziendale Continuo:** TechStore Italia (Catena Retail di Informatica & Elettronica)
-* **Prerequisiti Richiesti:** Fondamenti di logica informatica, dimestichezza base con il file system e fogli di calcolo Excel.
-* **Deliverable Finali per lo Studente:**
-  1. Script di aggregazione e calcolo su collezioni native `List[Dict]`
-  2. Dataset pulito e arricchito con anagrafiche (`roma.xlsx` bonificato)
-  3. Executive Dashboard grafica 2x2 salvata a 300 DPI (`executive_report.png`)
-  4. Pipeline ETL batch autonoma con storage compresso Parquet (`vendite_consolidate_italia.parquet`) e report Excel multi-scheda
-  5. Web Application interattiva reattiva con simulatore What-If (`dashboard/app.py` su Streamlit)
-  6. Unit file di produzione per demone Linux Systemd (`dashboard_vendite.service`)
-  7. Project Work di integrazione non supervisionata della filiale di Napoli (Benchmark: 4.552 record, € 4.614.820,50)
+* **Istituzione di Riferimento:** ITIS Campobasso
+* **Destinatari:** Studenti tecnici, aspiranti Data Analyst e professionisti junior.
+* **Durata Complessiva:** **22 Ore** (1.320 minuti netti suddivisi in 8 moduli tematici + Project Work finale).
+* **Metodologia Didattica:** **Hands-On Workshop** (40% Spiegazione concettuale e Live Coding guidato, 60% Laboratorio pratico autonomo su casi reali).
+* **Caso Aziendale Guida:** *TechStore Italia* – Catena retail di elettronica di consumo con filiali territoriali distribuite.
+
+### 🎯 Obiettivi Formativi Primari
+1. **Autonomia Operativa:** Portare i discenti da una conoscenza frammentaria di Excel alla padronanza completa dell'ambiente Python per l'analisi dati.
+2. **Ingegneria della Pipeline ETL:** Saper strutturare script batch resilienti capaci di gestire file multipli, bonificare anomalie e memorizzare output ottimizzati su formato Parquet.
+3. **Data Visualization Esecutiva:** Saper realizzare visualizzazioni statistiche a livello pubblicazione aziendale (300 DPI, layout 2x2, palette coerenti).
+4. **Interactive BI Application:** Costruire web application interattive con Streamlit complete di filtri dinamici e simulatori What-If per il top management.
+5. **Produzione & Deploy Linux:** Saper configurare ed orchestrare l'applicazione come servizio di background Linux tramite demone Systemd.
+
+### 📦 Deliverable Finali Certificati per lo Studente
+* `lab01_calcolo_sconti.py`: Script con logica nativa su collezioni `List[Dict]`.
+* `dataset/generated/roma_pulito.xlsx`: Dataset filiale Roma bonificato con merge anagrafico.
+* `dataset/generated/executive_report.png`: Dashboard 2x2 a 300 DPI con formattazione esecutiva.
+* `dataset/generated/dataset_master.parquet`: Master dataset nazionale compresso Snappy.
+* `dataset/generated/report_direzionale.xlsx`: File Excel multi-foglio con aggregazioni pivot.
+* `dashboard/app.py`: Web dashboard Streamlit multi-pagina con reattività immediata.
+* `dashboard_vendite.service`: Unit file Systemd con riavvio automatico e logging `journalctl`.
+* `project_work/dataset_napoli_pulito.parquet`: Integrazione autonoma filiale Napoli (1.000 righe, € 1.042.850,50).
 
 ---
 
 # 2. VISIONE COMPLESSIVA DEL PERCORSO & ARCHITETTURA DIDATTICA
 
-Il corso adotta il modello dell'**Apprendimento Progressivo ad Anelli Concentrici**: ogni modulo riutilizza, rafforza ed espande i concetti del modulo precedente, trasformando lo studente da operatore manuale Excel a Data Engineer & Business Analyst autonomo.
+Il percorso è concepito come una transizione fluida e progressiva: dal foglio di calcolo disordinato fino alla moderna piattaforma di business intelligence in cloud/server.
 
 ```text
-┌───────────────────────────────────────────────────────────────────────────┐
-│              ARCHITETTURA DI TRANSIZIONE DIDATTICA (22 ORE)               │
-├───────────────────────────────────────────────────────────────────────────┤
-│ 1. EXCEL MANUALE    ──► Ricezione file eterogenei da filiali via email    │
-│ 2. PYTHON NATIVO    ──► Logica algoritmica, List[Dict], funzioni pure     │
-│ 3. PANDAS FONDAMENTI──► DataFrame, Series, filtri booleani, .copy()       │
-│ 4. DATA WRANGLING   ──► Deduplicazione, parse date, merge relazionale 1:N │
-│ 5. VISUALIZZAZIONE  ──► Matplotlib OOP, Seaborn, Dashboard 2x2 (300 DPI)  │
-│ 6. AUTOMAZIONE ETL  ──► Scansione glob, filtro ~$ lock, storage Parquet   │
-│ 7. DASHBOARD WEB    ──► Streamlit reattivo, @st.cache_data, What-If       │
-│ 8. DEPLOY SERVER    ──► Linux Systemd, demone Restart=always, journalctl  │
-│ 9. PROJECT WORK     ──► Integrazione autonoma 4ª filiale (Napoli)         │
-└───────────────────────────────────────────────────────────────────────────┘
+       ┌─────────────────────────────────────────────────────────┐
+       │ 1. INGESTIONE DATI GREZZI (Excel raw: roma, milano...)   │
+       └────────────────────────────┬────────────────────────────┘
+                                    │
+                                    ▼
+       ┌─────────────────────────────────────────────────────────┐
+       │ 2. FONDAMENTI PYTHON NATIVO (List, Dict, Funzioni Pure) │
+       └────────────────────────────┬────────────────────────────┘
+                                    │
+                                    ▼
+       ┌─────────────────────────────────────────────────────────┐
+       │ 3. PANDAS TABELLARE (DataFrame, Series, Filtri Booleani) │
+       └────────────────────────────┬────────────────────────────┘
+                                    │
+                                    ▼
+       ┌─────────────────────────────────────────────────────────┐
+       │ 4. DATA WRANGLING & MERGE (Deduplica, Date, Join m:1)   │
+       └────────────────────────────┬────────────────────────────┘
+                                    │
+                                    ▼
+       ┌─────────────────────────────────────────────────────────┐
+       │ 5. VISUALIZZAZIONE DATI (Matplotlib OOP, Seaborn 2x2)   │
+       └────────────────────────────┬────────────────────────────┘
+                                    │
+                                    ▼
+       ┌─────────────────────────────────────────────────────────┐
+       │ 6. INGEGNERIA ETL AUTOMATIZZATA (glob, Parquet, Snappy) │
+       └────────────────────────────┬────────────────────────────┘
+                                    │
+                                    ▼
+       ┌─────────────────────────────────────────────────────────┐
+       │ 7. WEB DASHBOARD REATTIVA (Streamlit, Cache, What-If)   │
+       └────────────────────────────┬────────────────────────────┘
+                                    │
+                                    ▼
+       ┌─────────────────────────────────────────────────────────┐
+       │ 8. DEPLOY LINUX IN PRODUZIONE (Systemd Demone, Logs)    │
+       └────────────────────────────┬────────────────────────────┘
+                                    │
+                                    ▼
+       ┌─────────────────────────────────────────────────────────┐
+       │ 🏆 PROJECT WORK AUTONOMO: Integrazione Filiale Napoli    │
+       └─────────────────────────────────────────────────────────┘
 ```
 
 ---
 
 # 3. AGENDA COMPLETA DELLE 22 ORE
 
-| Modulo | Durata | Obiettivi Didattici Chiave | Deliverable / Output Operativo | Laboratorio Associato |
-| :---: | :---: | :--- | :--- | :--- |
-| **Mod 1** | **2h** | Tipi base, collezioni `List[Dict]`, funzioni pure, accumulo con `.get()`, list comprehension | Script calcolo fatturato, sconti e IVA | `laboratori/lab01_python_operativo/` |
-| **Mod 2** | **4h** | DataFrame, Series, import Excel, indicizzazione `.loc`/`.iloc`, filtri booleani, regola `.copy()` | Estrazione Top 10 Deals e filtri canale | `laboratori/lab02_pandas_fondamenti/` |
-| **Mod 3** | **3h** | Deduplicazione, missing values, normalizzazione date (`parse_data_flessibile`), merge `validate='m:1'` | Dataset Roma bonificato e unito con anagrafica | `laboratori/lab03_data_wrangling/` |
-| **Mod 4** | **3h** | Paradigma Matplotlib OOP (`fig, ax`), Barh con data label, boxplot Seaborn sconti, heatmap, 300 DPI | File immagine `executive_report.png` (2x2) | `laboratori/lab04_visualizzazione/` |
-| **Mod 5** | **2h** | Scansione `glob`, filtro lock `~$`, pipeline batch, storage Parquet Snappy, `ExcelWriter`, `logging` | `vendite_consolidate_italia.parquet` e report Excel | `laboratori/lab05_automazione_pipeline/` |
-| **Mod 6** | **4h** | Esecuzione reattiva, caching `@st.cache_data`, sidebar, KPI cards, multi-tab, What-If simulator | Web application `dashboard/app.py` | `laboratori/lab06_dashboard_streamlit/` |
-| **Mod 7** | **1h** | SSH, unit file Systemd, permessi `User=`, demone `Restart=always`, streaming log `journalctl -f` | Unit file `/etc/systemd/system/...service` | `laboratori/lab07_deploy_linux/` |
-| **PW** | **3h** | Sintesi autonoma: audit Napoli, pipeline master 4 filiali, verifica dashboard, report finale | Master 4 filiali (4.552 righe, € 4.614.820,50) | `project_work/` |
+| Modulo | Durata | Argomento Didattico | Focus Operativo | Laboratorio Associato |
+| :--- | :---: | :--- | :--- | :--- |
+| **Modulo 1** | **2h** | Python Operativo per l'Analisi Dati | Tipi primitivi, `List[Dict]`, funzioni pure, calcolo IVA e sconti | `laboratori/lab01_python_operativo/` |
+| **Modulo 2** | **4h** | Pandas Fondamentale | DataFrame, Series, filtri booleani, `.loc`/`.iloc`, gestione copie `.copy()` | `laboratori/lab02_pandas_fondamenti/` |
+| **Modulo 3** | **3h** | Data Wrangling & Qualità del Dato | Deduplicazione, parsing date eterogenee, `merge(validate='m:1')` | `laboratori/lab03_data_wrangling/` |
+| **Modulo 4** | **3h** | Visualizzazione & Reporting Esecutivo | Matplotlib OOP (`fig, ax`), Seaborn, palette brand, salvataggio 300 DPI | `laboratori/lab04_visualizzazione/` |
+| **Modulo 5** | **2h** | Automazione della Pipeline ETL | Batch scanner `glob`, filtro file lock `~$`, storage Parquet compresso | `laboratori/lab05_automazione_pipeline/` |
+| **Modulo 6** | **4h** | Dashboard Streamlit Interattiva | Layout reattivo, caching `@st.cache_data`, metric cards, simulatore What-If | `laboratori/lab06_dashboard_streamlit/` |
+| **Modulo 7** | **1h** | Deploy Linux & Systemd (Live Demo) | Configurazione servizio demone, `Restart=always`, monitoraggio log `journalctl` | `laboratori/lab07_deploy_linux/` |
+| **Project Work** | **3h** | Integrazione Autonoma Filiale Napoli | Bonifica dataset Napoli, re-ingestione ETL, aggiornamento Streamlit | `project_work/` |
+| **TOTALE** | **22h** | **Percorso Formativo Completo** | **Dall'Excel grezzo al servizio Linux in produzione** | **8 Moduli + Project Work** |
 
 ---
 
@@ -604,14 +644,14 @@ Il corso ha una durata complessiva certificata di **22 Ore** (1.320 minuti netti
 # 6. CHECKLIST OPERATIVA D'AULA
 
 ### 📋 Checklist Pre-Corso (Setup Iniziale - T-60 min)
-* [ ] Verificare che Python 3.10+ sia installato su tutte le macchine del laboratorio.
-* [ ] Verificare la clonazione del repository: `git clone https://github.com/arnymore/python_analisi_dati_campobasso.git`.
-* [ ] Creare ed attivare il virtualenv: `python3 -m venv .venv && source .venv/bin/activate`.
-* [ ] Installare le dipendenze bloccate: `pip install -r requirements.txt`.
-* [ ] Verificare la presenza dei dataset grezzi in `dataset/raw/` (`roma.xlsx`, `milano.xlsx`, `torino.xlsx`, `napoli_project_work.xlsx`).
-* [ ] Testare l'avvio di Jupyter Lab (`jupyter lab`) e Streamlit (`streamlit run dashboard/app.py`).
+* [ ] Verificare che l'interprete Python 3.10+ sia correttamente installato su tutte le postazioni.
+* [ ] Verificare la presenza del virtual environment `.venv` e l'installazione di tutti i pacchetti da `requirements.txt`.
+* [ ] Verificare che la cartella `dataset/raw/` contenga i 4 file Excel integri (`roma.xlsx`, `milano.xlsx`, `torino.xlsx`, `napoli_project_work.xlsx`).
+* [ ] Testare l'avvio del server Jupyter Notebook o Jupyter Lab.
+* [ ] Testare il comando `streamlit hello` o `streamlit run dashboard/app.py` sulla porta 8501.
+* [ ] Proiettare la slide 1 (Titolo e benvenuto) sul videoproiettore principale.
 
-### 📋 Checklist Pre-Modulo (All'inizio di ogni lezione)
+### 📋 Checklist Pre-Modulo (Routine per ciascun Modulo)
 * [ ] Proiettare la slide introduttiva del modulo corrispondente con gli obiettivi orari.
 * [ ] Aprire il notebook starter per gli studenti in `laboratori/` e la soluzione docente in `soluzioni_docente/`.
 * [ ] Lanciare la domanda di Hook iniziale (da Canovaccio) prima di scrivere codice.
