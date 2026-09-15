@@ -1,174 +1,175 @@
-# 🎬 PIANO SLIDE & STORYBOARD COMPLETO
+# 🎬 PIANO SLIDE & STORYBOARD V2 (75 SLIDE OTTIMIZZATE)
 ## Corso: Laboratorio Python + Analisi Dati (22 Ore)
-**Docente: Arnaldo Morena** | ITIS Campobasso
-
-> [!TIP]
-> **Versione Ottimizzata Disponibile**: Consulta [`piano_slide_storyboard_v2.md`](piano_slide_storyboard_v2.md) per la versione didattica ottimizzata a **75 Slide** (+30% tempo laboratori, Modulo 7 in Live Demo).
+**Docente: Arnaldo Morena** | ITIS Campobasso  
+**Revisione Didattica:** Versione 2.0 (Ottimizzazione densità, +30% tempo dedicato ai laboratori, Modulo 7 in Live Demo)
 
 ---
 
-### STRUTTURA DEL CORSO & RIPARTIZIONE SLIDE (VERSIONE ESTESA 100 SLIDE)
-* **Modulo 1 – Python Operativo per l'Analisi Dati** (2h) ➔ Slide 1 – 12 (12 slide)
-* **Modulo 2 – Pandas: Fondamenti e Manipolazione Dati** (4h) ➔ Slide 13 – 30 (18 slide)
-* **Modulo 3 – Data Wrangling, Pulizia e Integrazione** (3h) ➔ Slide 31 – 46 (16 slide)
-* **Modulo 4 – Visualizzazione Dati e Reporting** (3h) ➔ Slide 47 – 60 (14 slide)
-* **Modulo 5 – Automazione Pipeline ETL** (2h) ➔ Slide 61 – 70 (10 slide)
-* **Modulo 6 – Dashboard Interattive con Streamlit** (4h) ➔ Slide 71 – 86 (16 slide)
-* **Modulo 7 – Deploy su Server Linux & Produzione** (1h) ➔ Slide 87 – 94 (8 slide)
-* **Project Work Finale & Chiusura Corso** (3h) ➔ Slide 95 – 100 (6 slide)
+## 📊 RIEPILOGO STRUTTURA & RIPARTIZIONE SLIDE
+
+| Modulo Didattico | Durata | N. Slide V1 | N. Slide V2 | Range Slide V2 | Modalità Didattica & Focus Pedagogico |
+|:---|:---:|:---:|:---:|:---:|:---|
+| **Modulo 1 – Python Operativo** | 2h | 12 | **8** | Slide 1 – 8 | Laboratorio hands-on: tipi, strutture native, funzioni commerciali e normalizzazione stringhe. |
+| **Modulo 2 – Pandas Fondamenti** | 4h | 18 | **14** | Slide 9 – 22 | Laboratorio hands-on: vettorializzazione, `.copy()`, indexing `.loc`/`.iloc`, filtri booleani, Top Deals. |
+| **Modulo 3 – Data Wrangling** | 3h | 16 | **12** | Slide 23 – 34 | Laboratorio hands-on: deduplica, date miste, imputazione semplice (`fillna`), merge e validazione integrità. |
+| **Modulo 4 – Visualizzazione & Report**| 3h | 14 | **11** | Slide 35 – 45 | Laboratorio hands-on: Matplotlib + Seaborn, trend mensile, boxplot sconti, heatmap e dashboard 2x2. |
+| **Modulo 5 – Automazione Pipeline** | 2h | 10 | **8** | Slide 46 – 53 | Laboratorio hands-on: scansione `glob` con filtro `~$`, trasformazione modulare, Parquet ed Excel multi-sheet. |
+| **Modulo 6 – Dashboard Streamlit** | 4h | 16 | **13** | Slide 54 – 66 | Laboratorio hands-on: flusso reattivo, sidebar filtri, metric cards, download CSV e simulatore What-If. |
+| **Modulo 7 – Deploy Server Linux** | 1h | 8 | **4** | Slide 67 – 70 | **Live Demo guidata (Show-and-Tell)**: Systemd service, auto-restart, journalctl e Nginx. |
+| **Project Work Finale & Chiusura** | 3h | 6 | **5** | Slide 71 – 75 | Project Work autonomo/guidato: filiale Napoli, pipeline consolidata, benchmark e debriefing. |
+| **TOTALE** | **22h** | **100** | **75** | **Slide 1 – 75** | **80% Laboratorio Hands-on / 20% Teoria Operativa** |
 
 ---
 
-## 📘 MODULO 1: PYTHON OPERATIVO PER L'ANALISI DATI (2 Ore)
+## 🗓️ NUOVA AGENDA DOCENTE (TIMELINE 22 ORE COMPLESSIVE)
+
+* **Sessione 1 (Ore 1 – 4, 4h):**
+  * *Ore 1-2:* Modulo 1 – Python Operativo (Slide 1 – 8 ➔ **Lab 1**: calcolo KPI e pulizia stringhe).
+  * *Ore 3-4:* Modulo 2 – Pandas Parte 1: Ingestion, `.copy()` e Indicizzazione (Slide 9 – 15 ➔ **Lab 2.1 & 2.2**).
+* **Sessione 2 (Ore 5 – 8, 4h):**
+  * *Ore 5-6:* Modulo 2 – Pandas Parte 2: Filtri, Calcoli e Ordinamento (Slide 16 – 22 ➔ **Lab 2.3 & 2.4**).
+  * *Ore 7-8:* Modulo 3 – Data Wrangling Parte 1: Deduplica, Date e Stringhe (Slide 23 – 28 ➔ **Lab 3.1, 3.2, 3.3**).
+* **Sessione 3 (Ore 9 – 12, 4h):**
+  * *Ore 9:* Modulo 3 – Data Wrangling Parte 2: Imputazione `fillna()` e Merge con Controllo Integrità (Slide 29 – 34 ➔ **Lab 3.4 & 3.5**).
+  * *Ore 10-12:* Modulo 4 – Visualizzazione Dati e Dashboard 2x2 (Slide 35 – 45 ➔ **Lab 4 completo**).
+* **Sessione 4 (Ore 13 – 16, 4h):**
+  * *Ore 13-14:* Modulo 5 – Automazione Pipeline ETL, Filtro `~$` e Storage Parquet (Slide 46 – 53 ➔ **Lab 5 batch**).
+  * *Ore 15-16:* Modulo 6 – Streamlit Parte 1: Flusso Reattivo, Caching e KPI Cards (Slide 54 – 60 ➔ **Lab 6 starter**).
+* **Sessione 5 (Ore 17 – 20, 4h):**
+  * *Ore 17-18:* Modulo 6 – Streamlit Parte 2: Tabs, Simulatore What-If ed Export (Slide 61 – 66 ➔ **Lab 6 completo**).
+  * *Ore 19:* Modulo 7 – Deploy Linux in **Live Demo guidata** (Slide 67 – 70 ➔ Configurazione Systemd a schermo).
+  * *Ore 20:* Project Work – Lancio Traccia e Ingestion Filiale Napoli (Slide 71 – 72 ➔ **Avvio Project Work**).
+* **Sessione 6 (Ore 21 – 22, 2h):**
+  * *Ore 21-22:* Project Work – Consolidamento Nazionale, Benchmark, Soluzione Docente e Chiusura (Slide 73 – 75).
+
+---
+
+## 📘 MODULO 1: PYTHON OPERATIVO PER IL BUSINESS (2 Ore) – [Slide 1 – 8]
 
 | N. | Titolo Slide | Contenuto Chiave (Bullet Points) | Demo Live Docente | Esercitazione Laboratorio |
 |:---|:---|:---|:---|:---|
-| **1** | Benvenuti al Laboratorio Python + Analisi Dati | Obiettivi del corso, metodologia pratica 80/20, presentazione docente Arnaldo Morena, regole d'aula e repository. | Tour del repository GitHub/locale. | Setup ambiente locale e test Python. |
-| **2** | Il Caso Aziendale Unico | Presentazione della rete commerciale (filiali Roma, Milano, Torino, Napoli), problemi aziendali reali (fogli Excel disomogenei, perdite di tempo). | Apertura dei file Excel grezzi. | Ispezione visiva di `roma.xlsx`. |
-| **3** | Variabili e Tipi di Dato per il Business | Stringhe, interi, float, booleani; conversione di tipi (`int()`, `float()`, `str()`), gestione errori di cast. | REPL Python: cast di prezzi con virgole e simboli. | Conversione tipi su variabili singole. |
-| **4** | Liste e Tuple: Gestire Vettori di Dati | Indicizzazione da 0, slicing `[start:end]`, metodi `.append()`, `.extend()`, `.pop()`, immutabilità delle tuple. | Creazione dinamica di una lista transazioni. | Manipolazione lista prezzi. |
-| **5** | Dizionari: La Struttura Chiave-Valore | Coppie chiave-valore, accesso `.get()`, aggiunta e aggiornamento chiavi, annidamento dati (tabelle in memoria). | Rappresentare una riga d'ordine come dizionario. | Creazione schema anagrafico cliente. |
-| **6** | Controllo di Flusso: Logica Condizionale | Costrutti `if`, `elif`, `else`, operatori relazionali (`==`, `!=`, `>`, `<`), operatori logici (`and`, `or`, `not`). | Assegnazione fascia cliente (Gold, Silver, Bronze). | Calcolo scaglioni sconto per volume. |
-| **7** | Cicli `for` e `while` per Iterare sui Dati | Ciclo su liste e dizionari, funzioni `enumerate()` e `zip()`, accumulo totali e somme progressive. | Calcolo fatturato totale da un carrello ordini. | Iterazione su lista ordini mensili. |
-| **8** | List Comprehension: Eleganza ed Efficienza | Sintassi compatta `[f(x) for x in lista if condizione]`, confronto prestazionale vs ciclo for classico. | Filtrare ordini Hardware in una riga di codice. | Trasformazione lista imponibili netti. |
-| **9** | Funzioni: Modularità e Riutilizzo | Definizione con `def`, parametri posizionali e di default, valore di ritorno `return`, docstring esplicative. | Scrittura della funzione `calcola_totale_riga()`. | **Lab 1 - Es. 1.1**: Funzione calcolo riga. |
-| **10** | Elaborazione Liste di Dizionari | Modellazione tabellare: `List[Dict]`, iterazione multi-chiave, calcolo imponibile, sconto e IVA. | Calcolo subtotali su ordine multi-riga. | **Lab 1 - Es. 1.2**: Totali ordine carrello. |
-| **11** | Manipolazione Stringhe & Regex Base | Metodi `.strip()`, `.lower()`, `.upper()`, `.title()`, `.replace()`, `.split()`, introduzione al modulo `re`. | Pulizia di ragioni sociali con spazi e typo. | **Lab 1 - Es. 1.3**: Normalizzazione anagrafica. |
-| **12** | Aggregazioni Native Senza Librerie | Raggruppamento con dizionari accumulatore, calcolo conteggi, somme e medie manuali. | Aggregazione vendite per categoria con dizionario. | **Lab 1 - Es. 1.4**: Aggregatore categorie. |
+| **1** | Benvenuti & Il Caso Aziendale Unico | Obiettivi del corso 80/20, presentazione rete commerciale nazionale (Roma, Milano, Torino, Napoli), problemi dei fogli Excel disallineati. | Esplorazione cartella dati e file grezzo `roma.xlsx`. | Setup ambiente locale e verifica Python 3.12. |
+| **2** | Tipi Primitivi e Conversioni di Business | Numeri, stringhe, booleani; conversione di tipi (`float()`, `int()`, `str()`), rimozione simboli valuta e virgole decimali. | Cast e pulizia rapida di stringhe prezzo in Python. | Normalizzazione tipi variabili isolate. |
+| **3** | Collezioni Native: Liste e Dizionari | Liste indicizzate, tuple immutabili, dizionari chiave-valore `.get()`, rappresentazione di righe tabellari in memoria. | Costruzione del dizionario di una transazione commerciale. | Creazione schemi anagrafici con dizionari. |
+| **4** | Controllo di Flusso e Iterazioni | Costrutti `if/elif/else`, cicli `for` su elenchi di vendite, accumulo progressivo di totali e medie. | Calcolo fatturato totale carrello con ciclo `for`. | Iterazione su lista transazioni d'ordine. |
+| **5** | List Comprehension Operativa | Sintassi compatta ed efficiente `[f(x) for x in lista if cond]`, trasformazioni e filtri istantanei. | Estrazione degli ordini con importo > 1000€. | Trasformazione lista imponibili netti. |
+| **6** | Funzioni Commerciali Riutilizzabili | Definizione `def`, parametri posizionali e di default, ritorno strutturato in dizionario (`imponibile`, `sconto`, `iva`, `totale`). | Scrittura e test della funzione `calcola_totale_riga()`. | **Lab 1 - Es. 1.1**: Funzione calcolo riga ordine. |
+| **7** | Pulizia e Normalizzazione Testi | Metodi `.strip()`, `.lower()`, `.title()`, `.replace()`, `.split()`, correzione spazi multipli e acronimi societari (Srl, SpA). | Pulizia dinamica di ragioni sociali grezze. | **Lab 1 - Es. 1.3**: Normalizzazione nomi clienti. |
+| **8** | Aggregazioni Native Senza Librerie | Raggruppamento con dizionari accumulatore per categoria, calcolo quantità e volumi di vendita complessivi. | Aggregatore vendite per categoria prodotto. | **Lab 1 - Es. 1.4**: Aggregazione nativa carrello. |
 
 ---
 
-## 📗 MODULO 2: PANDAS - FONDAMENTI E MANIPOLAZIONE DATAFRAME (4 Ore)
+## 📗 MODULO 2: PANDAS - FONDAMENTI E MANIPOLAZIONE DATAFRAME (4 Ore) – [Slide 9 – 22]
 
 | N. | Titolo Slide | Contenuto Chiave (Bullet Points) | Demo Live Docente | Esercitazione Laboratorio |
 |:---|:---|:---|:---|:---|
-| **13** | Introduzione all'Ecosistema Pandas | Perché Pandas per l'analisi dati, confronto operativo Excel vs Pandas, Series e DataFrame a confronto. | Creazione del primo DataFrame manuale. | Creazione DataFrame da dizionario. |
-| **14** | Ingestion Dati: Leggere File Excel e CSV | `pd.read_excel()`, selezione fogli `sheet_name`, parametri `header`, `skiprows`, `usecols`, introduzione a `pd.read_csv()`. | Caricamento di `roma.xlsx` (foglio Dati e Clienti). | **Lab 2 - Es. 2.1**: Caricamento dataset Roma. |
-| **15** | Ispezione e Metadati del DataFrame | `.info()`, `.describe()`, `.shape`, `.columns`, `.dtypes`, `.head()`, `.tail()`, memoria occupata. | Diagnostica rapida di consistenza colonne. | Calcolo statistiche descrittive Roma. |
-| **16** | Selezione Colonne e Serie Pandas | Notazione a parentesi quadre `df['col']` vs `df[['col1', 'col2']]`, differenze tra Series e DataFrame. | Estrazione colonna fatturato e clienti. | Selezione colonne target di analisi. |
-| **17** | Indicizzazione Posizionale: `.iloc[]` | Accesso tramite indici numerici di riga e colonna `df.iloc[righe, colonne]`, slicing posizionale. | Estrazione blocchi di righe e prime N colonne. | **Lab 2 - Es. 2.2**: Estrazione slice `.iloc`. |
-| **18** | Indicizzazione per Etichetta: `.loc[]` | Accesso per etichette di riga/colonna, slicing inclusivo degli estremi, selezione mirata. | Filtro combinato per indici e nomi colonna. | Estrazione sottoinsiemi con `.loc`. |
-| **19** | Filtri Booleani Semplici | Maschere booleane (`df['col'] == valore`), estrazione righe corrispondenti, conteggio righe filtrate. | Filtro su vendite canale "E-commerce B2B". | **Lab 2 - Es. 2.3 (Parte 1)**: Filtro canale. |
-| **20** | Condizioni Logiche Multiple: AND, OR, NOT | Uso obbligatorio di `&` (AND), `\|` (OR), `~` (NOT), importanza delle parentesi tonde `(cond1) & (cond2)`. | Filtro ordini > 10 pezzi con sconto attivo. | **Lab 2 - Es. 2.3 (Parte 2)**: Condizioni doppie. |
-| **21** | Metodi di Filtro Avanzati: `.isin()`, `.between()` | Filtrare liste di valori con `.isin(['Roma', 'Milano'])`, range numerici con `.between(100, 500)`. | Estrazione transazioni di fascia media. | Applicazione filtri complessi multi-valore. |
-| **22** | Ricerca Testuale con `.str.contains()` | Filtro su stringhe, parametro `case=False`, gestione valori nulli con `na=False`. | Trovare tutti gli ordini contenenti "Server". | Ricerca per parole chiave prodotto. |
-| **23** | Creazione e Modifica di Colonne Calcolate | Operazioni vettorializzate colonna per colonna, calcolo `Fatturato_Lordo` = `Quantita * Prezzo`. | Calcolo colonne economiche senza cicli for. | **Lab 2 - Es. 2.4 (Parte 1)**: Calcolo imponibili. |
-| **24** | Gestione Tipi Numerici con `pd.to_numeric` | Conversione forzata con `errors='coerce'`, individuazione valori non numerici generati come NaN. | Conversione colonne prezzo con sporcature. | Pulizia preliminare colonna prezzi. |
-| **25** | Calcolo Sconti e Incidenza Economica | Calcolo valore sconto in euro, fatturato netto, applicazione aliquote IVA vettoriali. | Calcolo margine e netto finale riga per riga. | Calcolo `Fatturato_Netto` su tutto il dataset. |
-| **26** | Ordinamento Dati con `.sort_values()` | Ordinamento singolo e multi-colonna (`ascending=[True, False]`), gestione valori nulli con `na_position`. | Trovare i 10 ordini a maggior fatturato. | **Lab 2 - Es. 2.4 (Parte 2)**: Top 10 Deals. |
-| **27** | Statistiche Descrittive per Colonna | `.sum()`, `.mean()`, `.median()`, `.min()`, `.max()`, `.quantile()`, `.std()`, parametri `skipna=True`. | Calcolo KPI generali filiale Roma. | Calcolo mediane e percentili vendita. |
-| **28** | Conteggi di Frequenza con `.value_counts()` | Analisi distribuzione frequenze, percentuali con `normalize=True`, conteggio categorie e canali. | Quote percentuali per canale di vendita. | Calcolo share per canale commerciale. |
-| **29** | Esportazione Dati con Pandas | `.to_excel()`, `.to_csv()`, `.to_parquet()`, gestione parametri `index=False` ed encoding UTF-8. | Salvataggio del primo export filtrato. | Export dati ripuliti in formato CSV ed Excel. |
-| **30** | Recap e Best Practice Modulo 2 | Vettorializzazione vs cicli lenti, gestione memoria, riepilogo comandi essenziali. | Q&A interattivo su casi limite in aula. | Test di autovalutazione rapido su Pandas. |
+| **9** | Dal Foglio Excel al DataFrame Pandas | Perché Pandas, architettura tabellare (Series 1D vs DataFrame 2D), caricamento Excel con `pd.read_excel()` e selezione fogli. | Caricamento live di `dataset/raw/roma.xlsx`. | **Lab 2 - Es. 2.1 (Parte 1)**: Ingestion dati Roma. |
+| **10** | Ispezione e Diagnostica Strutturale | `.info()`, `.describe()`, `.shape`, `.columns`, `.dtypes`, `.head()`, identificazione tipi errati e consistenza dati. | Diagnostica rapida DataFrame e statistiche di base. | **Lab 2 - Es. 2.1 (Parte 2)**: Diagnostica colonne. |
+| **11** | Selezione Colonne, Viste e Copie (`.copy()`) | Selezione `df['col']` vs `df[['c1', 'c2']]`; View vs Copy in Pandas, uso esplicito di `.copy()` e prevenzione del `SettingWithCopyWarning`. | Dimostrazione pratica dell'avviso `SettingWithCopyWarning` e risoluzione con `.copy()`. | Estrazione sottoinsiemi sicuri con `.copy()`. |
+| **12** | Indicizzazione: `.iloc[]` vs `.loc[]` | `.iloc` (posizionale per numeri di riga/colonna) vs `.loc` (basato su etichette e condizioni logiche). | Estrazione blocchi di dati con slicing comparato. | **Lab 2 - Es. 2.2**: Estrazione slice `.iloc` e `.loc`. |
+| **13** | Filtri Booleani e Maschere Logiche | Maschere logiche (`df['Canale'] == 'E-commerce'`), conteggio occorrenze, estrazione record filtrati. | Filtro vendite canale digitale. | **Lab 2 - Es. 2.3 (Parte 1)**: Filtro canale vendita. |
+| **14** | Condizioni Multiple: AND (`&`), OR (`\|`), NOT (`~`) | Obbligatorietà delle parentesi tonde `(cond1) & (cond2)`, filtro congiunto su volumi e sconti applicati. | Estrazione ordini con Quantità >= 10 e Sconto > 0. | **Lab 2 - Es. 2.3 (Parte 2)**: Filtri booleani combinati. |
+| **15** | Filtri Avanzati: `.isin()` e `.str.contains()` | Selezione di elenchi con `.isin(['Roma', 'Milano'])`, ricerca testuale flessibile con `.str.contains(..., case=False)`. | Ricerca articoli contenenti "Server" o "Laptop". | Filtri su elenchi prodotti e categorie. |
+| **16** | Vettorializzazione e Colonne Calcolate | Calcolo senza cicli for: `Fatturato_Lordo = Quantita * Prezzo_Unitario`, efficienza vettoriale di Pandas. | Calcolo immediato dell'imponibile su 1.200 righe. | **Lab 2 - Es. 2.4 (Parte 1)**: Calcolo lordo vettoriale. |
+| **17** | Cast Numerico Sicuro con `pd.to_numeric` | Gestione di valori sporchi con `errors='coerce'`, conversione automatica di stringhe anomale in `NaN`. | Pulizia vettoriale prezzi contenenti caratteri spuri. | Bonifica preliminare colonna prezzi. |
+| **18** | Calcolo Sconti, Margini e Fatturato Netto | Calcolo valore sconto in euro, applicazione aliquote IVA, determinazione del `Fatturato_Netto` finale su DataFrame espliciti. | Calcolo colonne economiche complete. | Completamento colonne economiche riga. |
+| **19** | Ordinamento Dati con `.sort_values()` | Ordinamento per singola e multipla colonna (`ascending=[True, False]`), identificazione Top Deals commerciali. | Estrazione dei 10 ordini con maggior fatturato netto. | **Lab 2 - Es. 2.4 (Parte 2)**: Top 10 Deals Roma. |
+| **20** | Statistiche Descrittive e Percentili | `.sum()`, `.mean()`, `.median()`, `.quantile()`, misure di dispersione e analisi ticket medio. | Calcolo KPI generali di filiale. | Calcolo mediane e metriche di vendita. |
+| **21** | Analisi Frequenze con `.value_counts()` | Distribuzione ordini per canale e categoria, frequenze relative percentuali (`normalize=True`). | Calcolo quote percentuali per canale commerciale. | Calcolo market share interno per prodotto. |
+| **22** | Esportazione Dati Puliti | `.to_excel()`, `.to_parquet()`, salvataggio formati standard senza indice superfluo (`index=False`). | Export del dataset filtrato in formato Excel e Parquet. | Salvataggio output elaborazione Modulo 2. |
 
 ---
 
-## 📙 MODULO 3: DATA WRANGLING, PULIZIA E INTEGRAZIONE (3 Ore)
+## 📙 MODULO 3: DATA WRANGLING, PULIZIA E INTEGRAZIONE (3 Ore) – [Slide 23 – 34]
 
 | N. | Titolo Slide | Contenuto Chiave (Bullet Points) | Demo Live Docente | Esercitazione Laboratorio |
 |:---|:---|:---|:---|:---|
-| **31** | Il Concetto di Tidy Data & Dirty Data | I 5 problemi classici dei dati reali: duplicati, nulli, tipi errati, formati incoerenti, strutture non tabulari. | Mostrare le anomalie reali in `roma.xlsx`. | Identificazione anomalie con codice. |
-| **32** | Individuazione e Rimozione Duplicati | `df.duplicated(subset=...)`, conteggio duplicati, rimozione con `.drop_duplicates(keep='first'/'last')`. | Eliminazione vendite registrate due volte. | **Lab 3 - Es. 3.1**: Deduplica del dataset Roma. |
-| **33** | Diagnosi dei Valori Mancanti (Missing Values) | `.isna()`, `.isnull()`, `.notna()`, conteggio e percentuali di missing value per colonna. | Matrice riassuntiva dei dati mancanti. | Ispezione valori nulli su tutte le colonne. |
-| **34** | Strategie di Trattamento Nulli: Drop vs Impute | Quando usare `.dropna()` (righe/colonne) e quando usare `.fillna()`, rischi di distorsione del dato. | Confronto tra cancellazione e imputazione. | Scelta strategia per quantità e prezzi. |
-| **35** | Imputazione Numerica Avanzata | Imputazione con media e mediana condizionale per gruppo (`transform('mean')` / `transform('median')`). | Imputare il prezzo mancante con la media prodotto. | **Lab 3 - Es. 3.4**: Imputazione prezzi e qta. |
-| **36** | Normalizzazione Testi con Accessori `.str` | `.str.strip()`, `.str.lower()`, `.str.title()`, rimozione caratteri speciali e doppi spazi. | Pulizia della colonna `Ragione_Sociale`. | **Lab 3 - Es. 3.2 (Parte 1)**: Pulizia anagrafiche. |
-| **37** | Pulizia e Normalizzazione Categorie | Mappatura con `.map()`, `.replace()`, funzioni custom con `.apply()` e dizionari di riconduzione standard. | Riconduzione da 'HW', 'Hardware ' a 'Hardware'. | **Lab 3 - Es. 3.2 (Parte 2)**: Normalizzazione categorie. |
-| **38** | La Sfida delle Date: Formati Eterogenei | Date ISO (`2024-01-30`), formati italiani (`30/01/2024`), formati US (`01/30/2024`), testo (`30-Gen-2024`). | Analisi dei formati disallineati nel file Excel. | Ispezione valori colonna `Data_Vendita`. |
-| **39** | Date Seriali Excel e Parsing Robusto | Come Excel memorizza le date (giorni dal 1899-12-30), conversione seriali in datetime, `pd.to_datetime()`. | Scrittura della funzione `parse_data_flessibile()`. | **Lab 3 - Es. 3.3 (Parte 1)**: Parsing date miste. |
-| **40** | Feature Engineering Temporale | Estrazione componenti `.dt.year`, `.dt.month`, `.dt.day`, `.dt.day_name()`, `.dt.quarter`, periodi trimestrali. | Creazione colonna Mese, Nome Mese e Trimestre. | **Lab 3 - Es. 3.3 (Parte 2)**: Nuove feature temporali. |
-| **41** | Integrazione Dati: Concetti di JOIN / Merge | Teoria delle JOIN: Inner Join, Left Join, Right Join, Outer Join; chiavi primarie e chiavi esterne. | Diagramma di Venn ed esempi visivi JOIN. | Comprensione relazioni tra tabelle. |
-| **42** | Implementazione con `pd.merge()` | Sintassi `pd.merge(df1, df2, on='ID', how='left')`, gestione colonne con nomi diversi (`left_on`, `right_on`). | Unire le vendite con l'anagrafica clienti ufficiale. | **Lab 3 - Es. 3.5 (Parte 1)**: Merge anagrafica clienti. |
-| **43** | Aggregazioni e Tabelle Pivot con `groupby()` | Sintassi `df.groupby('Col')['Val'].sum()`, raggruppamenti multi-colonna (`Filiale`, `Categoria`). | Raggruppamento fatturato per settore cliente. | Calcolo aggregati per categoria e filiale. |
-| **44** | Aggregazioni Multiple Avanzate: `.agg()` | Uso di `.agg()` con dizionari e tuple nominate (`sum`, `mean`, `count`, `std`), ridenominazione colonne KPI. | Creazione del report per settore con 4 metriche. | **Lab 3 - Es. 3.5 (Parte 2)**: Report avanzato `.agg`. |
-| **45** | Tabelle Pivot con `pd.pivot_table()` | Creazione matrici bidimensionali (Righe x Colonne), valori aggregati, margini e totali complessivi (`margins=True`). | Matrice Canale di Vendita x Categoria Prodotto. | Costruzione tabella pivot canali/prodotti. |
-| **46** | Validazione e Data Quality Check | Tecniche di assert, verifica di consistenza tra lordo, sconti e netto, controllo duplicazioni post-merge. | Script di validazione consistenza dati. | Verifica finale della qualità del dataset pulito. |
+| **23** | Anatomia del 'Dirty Data' Aziendale | Cause reali dei dati sporchi, i 4 pilastri del wrangling: duplicati, formati data, valori nulli, anomalie stringa. | Ispezione anomalie reali su `roma.xlsx`. | Identificazione anomalie nel dataset. |
+| **24** | Rilevamento ed Eliminazione Duplicati | `df.duplicated(subset=...)`, verifica duplicati esatti vs duplicati su chiave, rimozione con `.drop_duplicates()`. | Eliminazione di 48 transazioni duplicate. | **Lab 3 - Es. 3.1**: Deduplica del dataset Roma. |
+| **25** | Standardizzazione Testi e Categorie | Rimozione spazi parassiti `.str.strip()`, maiuscole `.str.upper()`, dizionari di trascodifica categorie (`HW` ➔ `Hardware`). | Normalizzazione ragioni sociali e categorie. | **Lab 3 - Es. 3.2**: Pulizia codici e categorie. |
+| **26** | Il Rompicapo delle Date Eterogenee | Date ISO (`2024-03-15`), formati IT (`15/03/2024`), date testuali (`15-Mar-2024`) e seriali Excel (`45506`). | Analisi dei formati disallineati nel foglio Excel. | Ispezione colonna `Data_Vendita`. |
+| **27** | Parsing Robusto con `pd.to_datetime` | Funzione custom di parsing flessibile, conversione seriali Excel (base 1899-12-30) a oggetti `datetime64`. | Esecuzione parsing date miste (100% successo). | **Lab 3 - Es. 3.3 (Parte 1)**: Parsing date eterogenee. |
+| **28** | Feature Engineering Temporale | Estrazione componenti temporali: `.dt.year`, `.dt.month`, `.dt.strftime('%B')`, `.dt.to_period('Q')` per i trimestri. | Creazione colonne Mese, Nome Mese e Trimestre. | **Lab 3 - Es. 3.3 (Parte 2)**: Creazione feature date. |
+| **29** | Diagnosi dei Valori Mancanti (`NaN`) | Rilevazione nulli con `.isna().sum()`, quantificazione percentuale per colonna, impatto sui calcoli economici. | Mappa riassuntiva dei valori mancanti. | Ispezione valori nulli su tutte le colonne. |
+| **30** | Trattamento Nulli: Imputazione Semplice con `fillna()` | **Percorso Principale:** Imputazione robusta con mediana o media globale (`df['Prezzo'].fillna(df['Prezzo'].median())`); *Nota Extra Didattica:* accenno all'imputazione condizionale per gruppo con `transform()` disponibile nella dispensa di approfondimento. | Applicazione `fillna()` con mediana e confronto impatto. | **Lab 3 - Es. 3.4**: Imputazione e ricalcolo netto. |
+| **31** | Integrazione Relazionale: Concetti di Merge | Modello Fatti-Dimensioni, tipi di Join (Left, Inner, Outer), chiave primaria e chiave esterna (`Codice_Cliente`). | Diagramma relazionale Vendite ➔ Anagrafica Clienti. | Comprensione relazioni tra tabelle. |
+| **32** | Esecuzione Merge & Controllo Integrità | Sintassi `pd.merge(how='left')`, validazione unicità con `validate='many_to_one'`, diagnostica join con `indicator=True`, controllo `df.shape` pre/post join per prevenire duplicazioni. | Esecuzione merge anagrafica e verifica conteggio righe. | **Lab 3 - Es. 3.5 (Parte 1)**: Merge anagrafica clienti con verifica integrità. |
+| **33** | Aggregazioni Strategiche con `groupby()` | Paradigma Split-Apply-Combine, raggruppamento multi-livello per Settore cliente e Categoria prodotto. | Calcolo fatturato e sconti per settore merceologico. | Raggruppamento per settore e canale. |
+| **34** | Metriche Multiple Avanzate con `.agg()` | Costruzione del report direzionale con `.agg(Fatturato=('Netto', 'sum'), Ordini=('ID', 'count'), Sconto=('Sconto', 'mean'))`. | Creazione del report per settore ordinato per fatturato. | **Lab 3 - Es. 3.5 (Parte 2)**: Report avanzato `.agg`. |
 
 ---
 
-## 📊 MODULO 4: VISUALIZZAZIONE DATI E REPORTING (3 Ore)
+## 📊 MODULO 4: VISUALIZZAZIONE DATI E REPORTING DIREZIONALE (3 Ore) – [Slide 35 – 45]
 
 | N. | Titolo Slide | Contenuto Chiave (Bullet Points) | Demo Live Docente | Esercitazione Laboratorio |
 |:---|:---|:---|:---|:---|
-| **47** | I Principi della Data Visualization Efficace | Scelta del grafico corretto (Trend ➔ Linee, Confronto ➔ Barre, Distribuzione ➔ Boxplot, Relazione ➔ Scatter). | Esempi di grafici efficaci vs grafici fuorvianti. | Analisi critica di visualizzazioni aziendali. |
-| **48** | Anatomia di Matplotlib: Figure e Axes | Gerarchia di Matplotlib: `fig, ax = plt.subplots()`, canvas, assi, titoli, tick, label e legende. | Creazione del primo Canvas Matplotlib orientato a oggetti. | Inizializzazione struttura Figure/Axes. |
-| **49** | Grafici a Barre Verticali e Orizzontali | `ax.bar()` e `ax.barh()`, formattazione colori, bordi, etichette dei valori sopra/accanto alle barre. | Grafico Top 8 Clienti per fatturato netto. | **Lab 4 - Es. 4.1**: Bar chart orizzontale Top Clienti. |
-| **50** | Serie Temporali e Trend Lineari | `ax.plot()`, stili di linea (`linestyle`), marker, spessore (`linewidth`), formattazione asse temporale. | Andamento mensile delle vendite con marker. | **Lab 4 - Es. 4.2 (Parte 1)**: Line chart trend mensile. |
-| **51** | Aggiunta di Linee Guida e Annotazioni | `ax.axhline()`, `ax.axvline()`, `ax.annotate()`, evidenziare target di budget e medie annuali. | Inserimento linea di media annuale con etichetta. | **Lab 4 - Es. 4.2 (Parte 2)**: Aggiunta target di vendita. |
-| **52** | Seaborn: Statistica e Design Moderno | Perché Seaborn, temi integrati (`set_theme()`, palette cromatiche `Blues`, `viridis`, `Set2`), integrazione nativa Pandas. | Confronto immediato stile Matplotlib vs Seaborn. | Configurazione palette e stili Seaborn. |
-| **53** | Grafici a Barre con Seaborn: `sns.barplot` | Aggregazione automatica, barre di errore/intervalli di confidenza, parametro `hue` per sottogruppi. | Vendite per Categoria suddivise per Canale. | Creazione barplot con suddivisione `hue`. |
-| **54** | Analisi delle Distribuzioni: Istogrammi e KDE | `sns.histplot()`, curve di densità di probabilità (KDE), binning ottimale per prezzi e sconti. | Distribuzione degli sconti percentuali applicati. | Istogramma sconti e ticket medi. |
-| **55** | Boxplot per l'Individuazione di Outlier | Anatomia del Boxplot (mediana, quartili Q1/Q3, IQR, baffi, valori anomali), `sns.boxplot()`. | Analisi sconti concessi per canale di vendita. | Identificazione outlier commerciali con boxplot. |
-| **56** | Grafici a Dispersione: Relazioni e Correlazioni | `sns.scatterplot()`, dimensione bolle (`size`), colore (`hue`), individuazione cluster commerciali. | Relazione tra Quantità ordinata e Sconto concesso. | Scatter plot correlazione quantità vs prezzo. |
-| **57** | Heatmap e Matrici di Correlazione | `sns.heatmap()`, pivot table come input, parametri `annot=True`, formattazione numerica `fmt='.1f'`. | Matrice di calore Fatturato per Canale x Categoria. | **Lab 4 - Es. 4.3**: Creazione Heatmap vendite. |
-| **58** | Layout Multi-Plot Avanzato: Subplots | `plt.subplots(nrows, ncols, figsize=(w, h))`, gestione assi condivisi, titoli individuali e super-title `suptitle`. | Costruzione griglia 2x2 multi-grafico. | **Lab 4 - Es. 4.4 (Parte 1)**: Composizione griglia 2x2. |
-| **59** | Executive Dashboard 2x2 Completa | Assemblaggio dei 4 grafici direzionali in una tavola unica per il CdA. | Rifinitura estetica, allineamento e spaziature. | **Lab 4 - Es. 4.4 (Parte 2)**: Executive Dashboard finale. |
-| **60** | Esportazione Grafici per Presentazioni e Stampa | `plt.savefig()` a 300 DPI, formati PNG, PDF vettoriale, SVG, parametro `bbox_inches='tight'`. | Esportazione automatizzata in file ad alta risoluzione. | Salvataggio report grafico in cartella output. |
+| **35** | Principi di Data Storytelling Aziendale | Scelta della visualizzazione corretta, rimozione del disordine (chartjunk), focus sui KPI direzionali. | Confronto tra grafici poco chiari e visualizzazioni efficaci. | Analisi critica visualizzazioni. |
+| **36** | Anatomia di Matplotlib: Figure e Axes | Architettura orientata a oggetti `fig, ax = plt.subplots()`, canvas, assi, etichette e griglie. | Creazione del canvas Matplotlib con layout pulito. | Inizializzazione struttura Figure/Axes. |
+| **37** | Bar Chart Orizzontale con Valori sui Dati | Grafico a barre orizzontali `ax.barh()`, formattazione k€, inserimento etichette valori direttamente sulle barre. | Grafico Top 8 Clienti per fatturato netto. | **Lab 4 - Es. 4.1**: Bar chart orizzontale Top Clienti. |
+| **38** | Serie Temporali: Trend Mensile e Target | Grafico a linee con marker `ax.plot()`, aggiunta linea di media annuale con `ax.axhline()`, etichette mesi (Gen..Dic). | Andamento mensile delle vendite con target budget. | **Lab 4 - Es. 4.2**: Line chart trend vendite mensili. |
+| **39** | Seaborn: Statistica e Design Professionale | Integrazione con DataFrame Pandas, impostazione stili (`whitegrid`) e palette cromatiche aziendali. | Confronto rapido Matplotlib puro vs stile Seaborn. | Configurazione palette Seaborn. |
+| **40** | Analisi Distribuzioni e Outlier: Boxplot | Anatomia del Boxplot (mediana, quartili, IQR, outlier), analisi sconti applicati per canale di vendita con `sns.boxplot`. | Individuazione canali con eccessiva dispersione di sconti. | Boxplot distribuzione sconti per canale. |
+| **41** | Heatmap Matrice Canale vs Categoria | Tabella pivot bidimensionale trasformata in matrice di calore con `sns.heatmap()`, annotazioni numeriche formattate. | Mappa termica Fatturato per Canale x Categoria. | **Lab 4 - Es. 4.3**: Costruzione Heatmap vendite. |
+| **42** | Layout Multi-Plot Avanzato (Subplots) | Costruzione di griglie 2x2 con `plt.subplots(2, 2, figsize=(16, 10))`, gestione spazi e assi individuali. | Composizione della griglia multi-grafico. | **Lab 4 - Es. 4.4 (Parte 1)**: Griglia multi-plot 2x2. |
+| **43** | Executive Dashboard 2x2 per il CdA | Assemblaggio completo dei 4 grafici direzionali (Trend, Categorie, Sconti, Heatmap) con `suptitle`. | Generazione della dashboard unificata per la direzione. | **Lab 4 - Es. 4.4 (Parte 2)**: Assemblaggio Executive Report. |
+| **44** | Esportazione ad Alta Risoluzione | Salvataggio con `plt.savefig()` a 300 DPI in formato PNG/PDF per stampa e presentazioni direzionali. | Export automatico del file `executive_report.png`. | Salvataggio grafici in `dataset/generated/`. |
+| **45** | Recap & Best Practice Visualizzazione | Checklist di qualità: titoli auto-esplicativi, unità di misura, contrasto cromatico, formati vettoriali. | Code review e discussione sui grafici prodotti. | Rifinitura estetica dei grafici studenti. |
 
 ---
 
-## ⚙️ MODULO 5: AUTOMAZIONE PIPELINE ETL (2 Ore)
+## ⚙️ MODULO 5: AUTOMAZIONE PIPELINE ETL (2 Ore) – [Slide 46 – 53]
 
 | N. | Titolo Slide | Contenuto Chiave (Bullet Points) | Demo Live Docente | Esercitazione Laboratorio |
 |:---|:---|:---|:---|:---|
-| **61** | Architettura di una Pipeline ETL Aziendale | Concetto di Extract (E), Transform (T), Load (L); passaggio da script 'one-shot' a processi automatizzati e stabili. | Schema architetturale della pipeline vendite. | Progettazione del flusso dati modulare. |
-| **62** | Gestione File System e Modulo `pathlib` / `os` | Percorsi relativi e assoluti, `os.path.join()`, creazione cartelle dinamiche `os.makedirs(..., exist_ok=True)`. | Scrittura di percorsi multipiattaforma (Linux/Windows). | Configurazione percorsi I/O dinamici. |
-| **63** | Scansione Dinamica dei File con `glob` | Ricerca automatica di tutti i file regionali `glob.glob('dataset/*.xlsx')`, filtraggio file temporanei `~$`. | Rilevamento automatico di Roma, Milano, Torino. | **Lab 5 - Fase 1**: Ingestion automatica file. |
-| **64** | Ingestion e Concatenazione Massiva | Lettura ciclica con gestione eccezioni `try/except`, unione verticale di DataFrame con `pd.concat()`. | Caricamento e fusione dei file di tutte le filiali. | Concatenazione dati vendite e anagrafiche. |
-| **65** | Modularizzazione della Trasformazione Dati | Raggruppamento delle funzioni di cleaning in un modulo pulito, applicazione uniforme su tutte le filiali. | Esecuzione della pipeline di trasformazione. | **Lab 5 - Fase 2**: Funzione `trasforma_dataset()`. |
-| **66** | Data Quality Audit e Report di Validazione | Generazione metriche di controllo qualità: duplicati rimossi, righe con anomalie, totali di controllo (Checksum). | Stampa del report di integrità a schermo. | Calcolo metriche di coerenza contabile. |
-| **67** | Logging Professionale con il Modulo `logging` | Perché evitare `print()`, livelli di log (DEBUG, INFO, WARNING, ERROR, CRITICAL), formattazione timestamp. | Configurazione del logger standard su console e file. | Aggiunta log strutturati alla pipeline. |
-| **68** | Esportazione Parquet: Prestazioni e Compressione | Perché Parquet rispetto a CSV/Excel: compressione a colonna, tipizzazione nativa, velocità 10x in lettura. | Confronto dimensioni file e tempi di caricamento. | **Lab 5 - Fase 3 (Parte 1)**: Salvataggio Parquet. |
-| **69** | Generazione Report Excel Multi-Foglio | Scrittura avanzata con `pd.ExcelWriter(..., engine='openpyxl')`, creazione fogli riepilogativi aggregati. | Generazione di `report_direzionale_consolidato.xlsx`. | **Lab 5 - Fase 3 (Parte 2)**: Report Excel multi-scheda. |
-| **70** | Esecuzione da Linea di Comando (CLI & Argparse) | Modulo `argparse`, parametri `--input-dir` e `--output-dir`, esecuzione batch della pipeline. | Esecuzione dello script da terminale con flag custom. | Esecuzione pipeline completa end-to-end. |
+| **46** | Architettura della Pipeline ETL Aziendale | Flusso Extract-Transform-Load, passaggio da script interattivo a modulo batch automatico e robusto. | Diagramma di flusso della pipeline di filiale. | Progettazione flusso ETL modulare. |
+| **47** | Scansione Dinamica & Filtro File Temporanei | Ricerca file regionali `glob.glob('dataset/raw/*.xlsx')`, gestione percorsi con `os.path`, filtro ed esclusione attiva dei file lock/temporanei di Excel (`~$*.xlsx`). | Riconoscimento dinamico ed esclusione file lock temporanei. | **Lab 5 - Fase 1**: Ingestion automatica multi-file. |
+| **48** | Ingestion Massiva e Concatenazione | Lettura ciclica con gestione eccezioni `try/except`, unione verticale con `pd.concat()` per vendite e anagrafiche. | Fusione automatica di 3 filiali in un unico DataFrame. | Concatenazione master dataset. |
+| **49** | Centralizzazione della Trasformazione | Incapsulamento delle regole di wrangling in `trasforma_dataset()`, deduplica, parsing date e imputazioni automatiche. | Esecuzione del cleaning centralizzato su tutto il master. | **Lab 5 - Fase 2**: Funzione di trasformazione. |
+| **50** | Logging Strutturato vs Print Statement | Configurazione del modulo standard `logging`, livelli (INFO, WARNING, ERROR), timestamp e monitoraggio esecuzione. | Tracciamento eventi e metriche della pipeline su console. | Aggiunta log strutturati alla pipeline. |
+| **51** | Storage Ottimizzato in Apache Parquet | Perché Parquet per l'analytics: archiviazione a colonna, compressione Snappy, velocità di caricamento 10x per Streamlit. | Confronto peso file e benchmark lettura Parquet vs CSV. | **Lab 5 - Fase 3 (Parte 1)**: Export Parquet compresso. |
+| **52** | Generazione Report Excel Multi-Foglio | Creazione automatica di `report_direzionale_consolidato.xlsx` con fogli di dettaglio e schede KPI per filiale e settore. | Generazione e apertura del report Excel multi-scheda. | **Lab 5 - Fase 3 (Parte 2)**: Export Excel direzionale. |
+| **53** | Esecuzione Batch da Terminale (CLI) | Integrazione con `argparse`, parametri `--input-dir` e `--output-dir`, esecuzione end-to-end con un solo comando. | Esecuzione da terminale della pipeline completa. | Esecuzione autonoma della pipeline ETL. |
 
 ---
 
-## 💻 MODULO 6: DASHBOARD INTERATTIVE CON STREAMLIT (4 Ore)
+## 💻 MODULO 6: DASHBOARD INTERATTIVE CON STREAMLIT (4 Ore) – [Slide 54 – 66]
 
 | N. | Titolo Slide | Contenuto Chiave (Bullet Points) | Demo Live Docente | Esercitazione Laboratorio |
 |:---|:---|:---|:---|:---|
-| **71** | Introduzione a Streamlit e Architettura Reattiva | Cos'è Streamlit, filosofia "Pure Python", modello di esecuzione reattivo (script re-run ad ogni interazione). | Creazione app "Hello World" e avvio server locale. | Avvio del primo script Streamlit. |
-| **72** | Configurazione Pagina e Titoli | `st.set_page_config()`, layout wide, favicon, `st.title()`, `st.header()`, `st.caption()`, formattazione Markdown. | Impostazione del layout aziendale della dashboard. | Personalizzazione intestazione applicazione. |
-| **73** | Caching per Alte Prestazioni: `@st.cache_data` | Perché il caching è vitale, come evitare di ricaricare file Parquet ad ogni clic dell'utente, TTL e invalidazione. | Dimostrazione velocità di caricamento con/senza cache. | Applicazione decorator `@st.cache_data`. |
-| **74** | Controlli Utente: Sidebar e Widget Interattivi | `st.sidebar`, caselle a discesa `st.selectbox()`, selezione multipla `st.multiselect()`, valori di default. | Creazione filtri interattivi Filiale e Categoria. | **Lab 6 - Es. 6.1 (Parte 1)**: Sidebar con filtri. |
-| **75** | Filtri Temporali e Slider | `st.date_input()` con range di selezione date, `st.slider()` per intervalli numerici e soglie. | Filtraggio dinamico del DataFrame per periodo. | **Lab 6 - Es. 6.1 (Parte 2)**: Filtro per range date. |
-| **76** | Schede di Riepilogo: `st.columns` e `st.metric` | Suddivisione della pagina in colonne `st.columns(5)`, visualizzazione KPI cards con valori e delta. | Costruzione della barra KPI superiore (Fatturato, Ordini). | **Lab 6 - Es. 6.2**: Creazione 5 KPI metric cards. |
-| **77** | Organizzazione Contenuti: `st.tabs` e `st.expander` | Creazione schede di navigazione `st.tabs()`, pannelli collassabili `st.expander()`, layout ordinato e moderno. | Creazione delle 4 schede tematiche dell'applicazione. | Strutturazione interfaccia in schede tematiche. |
-| **78** | Integrazione Grafici Matplotlib e Seaborn | `st.pyplot(fig)`, gestione rendering vettoriale, dimensionamento ottimale all'interno delle colonne. | Inserimento trend mensile interattivo nella scheda 1. | Rendering grafici analitici in Streamlit. |
-| **79** | Grafici Nativi Streamlit & Altair | `st.line_chart()`, `st.bar_chart()`, `st.altair_chart()`, interattività nativa con tooltip al passaggio del mouse. | Creazione grafico a barre interattivo per categoria. | Costruzione grafici nativi interattivi. |
-| **80** | Visualizzazione Tabelle Dati: `st.dataframe` | `st.dataframe()` vs `st.table()`, ordinamento colonne interattivo, ricerca rapida, formattazione con `.style.format()`. | Tabella Top 10 Clienti formattata con valuta euro. | Visualizzazione tabelle ranking con stili. |
-| **81** | Filtro di Ricerca Testuale Dinamico | `st.text_input()`, filtraggio in tempo reale su ragione sociale o codice prodotto durante la digitazione. | Ricerca rapida cliente nel database master. | Implementazione motore di ricerca interno. |
-| **82** | Esportazione Dati per l'Utente: `st.download_button` | Creazione buffer in memoria (`io.BytesIO` / `.to_csv()`), download immediato del dataset filtrato in CSV/Excel. | Download dei record visualizzati con un solo clic. | **Lab 6 - Es. 6.3**: Pulsante download CSV. |
-| **83** | Simulatore di Scenari di Business ("What-If") | Come costruire un simulatore decisionale: slider per variazione volumi (+/-%) e sconti, ricalcolo in tempo reale. | Dimostrazione simulazione impatto margini in aula. | Creazione scheda Simulatore What-If. |
-| **84** | Messaggi Informativi e Feedback Visivo | `st.success()`, `st.info()`, `st.warning()`, `st.error()`, indicatori di caricamento con `st.spinner()`. | Aggiunta banner di stato e notifiche operative. | Inserimento notifiche di stato nell'app. |
-| **85** | Rifinitura UI e Custom Styling con CSS | Iniezione di CSS personalizzato con `st.markdown(..., unsafe_allow_html=True)`, colori aziendali e card shadow. | Personalizzazione estetica professionale del cruscotto. | Applicazione stili CSS al cruscotto. |
-| **86** | Revisione e Test End-to-End della Dashboard | Navigazione completa, test di tutti i filtri, verifica reattività e assenza di bug. | Demo completa dell'applicazione funzionante. | Collaudo finale della dashboard da parte degli studenti. |
+| **54** | Architettura Reattiva di Streamlit & Pure Python | Paradigma reattivo: esecuzione top-to-bottom ad ogni interazione dell'utente con i widget; vantaggi vs BI tradizionali, setup layout wide. | Avvio della prima applicazione Streamlit locale e test reattività. | Configurazione iniziale Web App. |
+| **55** | Caching ad Alte Prestazioni con `@st.cache_data` | Memorizzazione in RAM del dataset Parquet, prevenzione dei ricaricamenti inutili, invalidazione e TTL. | Benchmark prestazioni con/senza decoratore di cache. | Applicazione caching su caricamento Parquet. |
+| **56** | Sidebar & Controlli Utente Dinamici | Barra laterale `st.sidebar`, filtri multi-selezione `st.multiselect()` per filiali, categorie e canali distributivi. | Creazione del pannello filtri interattivo. | **Lab 6 - Es. 6.1 (Parte 1)**: Costruzione sidebar filtri. |
+| **57** | Filtri Temporali con `st.date_input` | Selettore a calendario con range date (min/max), filtraggio dinamico del DataFrame per periodo di vendita. | Filtraggio temporale dinamico dei dati. | **Lab 6 - Es. 6.1 (Parte 2)**: Filtro per intervallo date. |
+| **58** | Barra Superiore dei KPI con `st.metric` | Suddivisione layout con `st.columns(5)`, card di riepilogo: Fatturato Netto, Ordini, Ticket Medio, Sconto Medio, Pezzi. | Costruzione della barra KPI con formattazione euro. | **Lab 6 - Es. 6.2**: Creazione 5 metric cards. |
+| **59** | Organizzazione a Schede con `st.tabs` | Creazione di 4 schede tematiche (Trend, Clienti, What-If, Dati), layout pulito e navigazione moderna. | Strutturazione dell'interfaccia in schede orizzontali. | Implementazione schede con `st.tabs`. |
+| **60** | Tab 1: Trend Temporale & Performance Categorie | Rendering di grafici Matplotlib/Seaborn con `st.pyplot()`, trend mensile multi-filiale e vendite per categoria. | Visualizzazione grafici analitici reattivi ai filtri. | Rendering grafici analitici in Tab 1. |
+| **61** | Tab 2: Ranking Top Clienti & Settori | Tabelle formattate con `st.dataframe()` e `style.format()`, grafico a torta/ciambella quote di mercato settoriali. | Tabella Top 10 Clienti con ordinamento interattivo. | Visualizzazione ranking e quote in Tab 2. |
+| **62** | Motore di Ricerca Full-Text Interno | Campo `st.text_input()` con ricerca istantanea multi-campo su clienti, prodotti e ID transazione. | Ricerca cliente in tempo reale nel database master. | Implementazione casella di ricerca. |
+| **63** | Esportazione Dati per l'Utente: `st.download_button` | Creazione buffer CSV in memoria (`.to_csv().encode('utf-8')`), download immediato dei record filtrati. | Download istantaneo del report CSV filtrato. | **Lab 6 - Es. 6.3**: Pulsante download CSV. |
+| **64** | Tab 3: Simulatore di Scenari ("What-If Analysis") | Modello decisionale interattivo: slider per variazione volumi (+/- 50%) e sconti (+/- 15%), ricalcolo del margine. | Simulazione live dell'impatto di una politica sconti. | Costruzione del simulatore commerciale. |
+| **65** | Indicatori Visivi e CSS Personalizzato | Iniezione CSS personalizzato con `st.markdown()`, box informativi `st.info()`, `st.success()`, badge di stato. | Personalizzazione grafica professionale dell'applicazione. | Rifinitura estetica e layout della dashboard. |
+| **66** | Collaudo End-to-End della Dashboard | Test incrociato filtri, reattività, assenza di errori runtime, verifica coerenza contabile dei totali. | Dimostrazione dell'applicazione completa in esecuzione. | Collaudo finale da parte degli studenti. |
 
 ---
 
-## 🚀 MODULO 7: DEPLOY SU SERVER LINUX & PRODUZIONE (1 Ora)
+## 🚀 MODULO 7: DEPLOY SU SERVER LINUX & PRODUZIONE (1 Ora) – [Slide 67 – 70]
+> **MODALITÀ DIDATTICA ESCLUSIVA: LIVE DEMO GUIDATA (SHOW-AND-TELL 100% PRATICO)**
 
 | N. | Titolo Slide | Contenuto Chiave (Bullet Points) | Demo Live Docente | Esercitazione Laboratorio |
 |:---|:---|:---|:---|:---|
-| **87** | Dal Laptop al Server Aziendale | Perché il deploy su server: accessibilità continua 24/7, sicurezza, centralizzazione dei dati, differenze dev vs prod. | Connessione SSH al server aziendale Linux. | Accesso al terminale Linux. |
-| **88** | Architettura di Produzione su Linux | Schema a 3 livelli: Streamlit Daemon ➔ Gestore di Servizi Systemd ➔ Reverse Proxy Nginx (Porta 80/443). | Illustrazione architettura di produzione. | Comprensione del flusso di rete su server. |
-| **89** | Preparazione Ambiente e Virtual Environment | Configurazione permessi utente non-root, creazione cartella applicazione, creazione virtualenv isolato `.venv`. | Creazione `.venv` e installazione dipendenze da `requirements.txt`. | Setup del virtual environment su Linux. |
-| **90** | Demoni e Servizi in Background: Systemd | Perché non usare `nohup` o `screen`, vantaggi di Systemd (avvio automatico al boot, riavvio in caso di crash). | Spiegazione della struttura di un file unit Systemd. | Lettura del file `dashboard_vendite.service`. |
-| **91** | Scrittura del File `.service` | Definizione sezioni `[Unit]`, `[Service]` (User, WorkingDirectory, ExecStart, Restart), `[Install]`. | Creazione del file `/etc/systemd/system/dashboard_vendite.service`. | **Lab 7**: Configurazione file service. |
-| **92** | Gestione del Servizio con `systemctl` | Comandi operativi: `systemctl daemon-reload`, `enable`, `start`, `stop`, `restart`, `status`. | Avvio e verifica dello stato del demone Streamlit. | Avvio del servizio e verifica stato attivo. |
-| **93** | Ispezione dei Log con `journalctl` | Monitoraggio log in tempo reale con `journalctl -u dashboard_vendite.service -f`, debug degli errori di produzione. | Simulazione di errore e lettura log in diretta. | Debugging e consultazione log di sistema. |
-| **94** | Cenni di Reverse Proxy (Nginx) & Firewall (UFW) | Concetto di Reverse Proxy, configurazione blocco Nginx per porta 8501, regole firewall di sicurezza con UFW. | Mostrare Nginx proxy pass funzionante. | Checklist di sicurezza e messa in sicurezza server. |
+| **67** | Dal Laptop alla Produzione 24/7 | Perché il deploy su server: centralizzazione dati, disponibilità continua, sicurezza; architettura Demone ➔ Systemd ➔ Nginx. | Connessione SSH al server Linux e panoramica ambiente. | **Live Demo guidata**: Osservazione e consultazione `guida_deploy.md`. |
+| **68** | Creazione del Servizio Demone con Systemd | Struttura del file unit `/etc/systemd/system/dashboard_vendite.service`, sezioni `[Unit]`, `[Service]` (User, ExecStart, Restart=always). | Creazione a schermo del file `.service` con `setup_service.sh`. | **Live Demo guidata**: Provisioning file systemd service. |
+| **69** | Amministrazione del Servizio con `systemctl` | Comandi essenziali: `systemctl daemon-reload`, `enable` (boot automatico), `start`, `status`, `restart`, `stop`. | Avvio e verifica stato attivo (`running`) del servizio. | **Live Demo guidata**: Gestione ciclo di vita servizio. |
+| **70** | Monitoraggio Log con `journalctl` & Cenni Nginx | Diagnostica log in tempo reale `journalctl -u dashboard_vendite.service -f`, reverse proxy Nginx su porta 80, firewall UFW. | Simulazione riavvio per crash e ispezione log in diretta. | **Live Demo guidata**: Consultazione log di produzione. |
 
 ---
 
-## 🏆 PROJECT WORK FINALE & CHIUSURA CORSO (3 Ore)
+## 🏆 PROJECT WORK FINALE & CHIUSURA CORSO (3 Ore) – [Slide 71 – 75]
 
 | N. | Titolo Slide | Contenuto Chiave (Bullet Points) | Demo Live Docente | Esercitazione Laboratorio |
 |:---|:---|:---|:---|:---|
-| **95** | Presentazione del Project Work Finale | Scenario: Acquisizione nuova filiale di Napoli (`napoli_project_work.xlsx`), obiettivi di business e requisiti di consegna. | Presentazione traccia ufficiale e dataset Napoli. | Download e apertura dataset Napoli. |
-| **96** | Fasi Operative del Project Work | Guida alle 4 fasi: 1. Cleaning Napoli; 2. Integrazione Nazionale; 3. Analisi di Business; 4. Estensione Dashboard. | Chiarimento dubbi metodologici e tecnici. | Avvio lavoro autonomo / a coppie. |
-| **97** | Sessione di Laboratorio Guidato (Hands-On) | Gli studenti sviluppano la pipeline completa e rispondono ai quesiti di business, supporto personalizzato docente. | Affiancamento, troubleshooting e code review in aula. | Sviluppo attivo script e grafici. |
-| **98** | Presentazione dei Risultati degli Studenti | Esposizione sintetica dei risultati da parte dei partecipanti, confronto metriche e insight scoperti sui dati. | Conduzione tavola rotonda e confronto soluzioni. | Presentazione grafici e insight di business. |
-| **99** | Analisi della Soluzione Docente di Riferimento | Presentazione della soluzione ufficiale commentata, best practice architetturali, benchmark prestazioni. | Esecuzione live di `soluzione_project_work.py`. | Confronto codice docente vs codice studente. |
-| **100** | Conclusioni, Certificazione e Prossimi Passi | Riepilogo competenze acquisite (Python, Pandas, Wrangling, Seaborn, ETL, Streamlit, Deploy), consegna attestati. | Risorse per continuare ad approfondire Python & Data. | Consegna materiali completi del corso. |
+| **71** | Business Case Finale: Espansione Filiale Napoli | Scenario: Ingestion della nuova sede di Napoli (`napoli_project_work.xlsx`), obiettivi di consolidamento a 4 filiali e quesiti di business. | Presentazione dataset Napoli e traccia ufficiale d'esame. | **Project Work**: Ingestion dataset Napoli. |
+| **72** | Specifiche Tecniche & Rubrica di Valutazione | I 4 deliverable: 1. Cleaning; 2. Merge e Consolidamento Parquet; 3. Risposta KPI; 4. Grafici di Benchmark; criteri di voto (100pt). | Chiarimento requisiti e standard di consegna. | **Project Work**: Sviluppo pipeline a 4 filiali. |
+| **73** | Sessione Operativa Guidata (Hands-On) | Lavoro autonomo / a coppie degli studenti sullo script finale, supporto personalizzato del docente e troubleshooting. | Affiancamento e revisione codice in tempo reale. | **Project Work**: Sviluppo script e grafici PNG. |
+| **74** | Presentazione Risultati & Analisi Benchmark | Esposizione dei team: quote filiali (Milano 32.7%, Roma 25.1%, Napoli 23.4%, Torino 18.8%), insight commerciali su Napoli. | Conduzione tavola rotonda e confronto insight. | Presentazione report e metriche scoperte. |
+| **75** | Soluzione Ufficiale Docente & Conclusioni | Presentazione codice di riferimento `soluzione_project_work.py`, recap competenze acquisite, consegna attestati e prossimi passi. | Esecuzione live soluzione docente e chiusura corso. | Consegna kit didattico completo del corso. |

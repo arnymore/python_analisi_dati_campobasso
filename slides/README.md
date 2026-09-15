@@ -1,24 +1,30 @@
 # 🎬 Slides & Storyboard del Corso
 
-Questa cartella contiene la progettazione didattica e lo storyboard dettagliato delle slide del corso.
+Questa cartella contiene la progettazione didattica, lo storyboard dettagliato e i file di presentazione del corso.
 
 ---
 
-## 📄 Versioni Disponibili
+## 📄 File di Progettazione Didattica
 
-### 1. `piano_slide_storyboard_v2.md` ⭐ (Consigliata per l'Aula)
-Storyboard ottimizzato composto da **75 Slide**, con una densità didattica bilanciata, maggiore tempo dedicato ai laboratori hands-on (+30%) e il Modulo 7 (Deploy Linux) strutturato interamente come **Live Demo / Show-and-Tell**:
-* **Modulo 1 (2h):** Slide 1 – 8 (8 slide)
-* **Modulo 2 (4h):** Slide 9 – 22 (14 slide)
-* **Modulo 3 (3h):** Slide 23 – 34 (12 slide)
-* **Modulo 4 (3h):** Slide 35 – 45 (11 slide)
-* **Modulo 5 (2h):** Slide 46 – 53 (8 slide)
-* **Modulo 6 (4h):** Slide 54 – 66 (13 slide)
-* **Modulo 7 (1h):** Slide 67 – 70 (4 slide, **Full Live Demo**)
-* **Project Work (3h):** Slide 71 – 75 (5 slide)
+* **`piano_slide_storyboard_v2.md`** & **`piano_slide_storyboard.md`** ⭐:
+  Storyboard ufficiale composto da **75 Slide**, con densità didattica bilanciata (80% Pratica / 20% Teoria), +30% di tempo dedicato ai laboratori hands-on e il Modulo 7 (Deploy Linux) strutturato come **Live Demo guidata**:
+  * **Modulo 1 – Python Operativo (2h):** Slide 1 – 8 (8 slide)
+  * **Modulo 2 – Pandas Fondamenti (4h):** Slide 9 – 22 (14 slide)
+  * **Modulo 3 – Data Wrangling (3h):** Slide 23 – 34 (12 slide)
+  * **Modulo 4 – Visualizzazione & Report (3h):** Slide 35 – 45 (11 slide)
+  * **Modulo 5 – Automazione Pipeline (2h):** Slide 46 – 53 (8 slide)
+  * **Modulo 6 – Dashboard Streamlit (4h):** Slide 54 – 66 (13 slide)
+  * **Modulo 7 – Deploy Server Linux (1h):** Slide 67 – 70 (4 slide, **Live Demo guidata**)
+  * **Project Work Finale & Chiusura (3h):** Slide 71 – 75 (5 slide)
+  * **Totale:** **75 Slide • 22 Ore**
 
-### 2. `piano_slide_storyboard.md` (Versione Estesa)
-Versione estesa e analitica da **100 Slide**, adatta per consultazione di dettaglio o corsi con maggiore quota teorica.
+---
+
+## 📊 File di Presentazione Generati
+
+* **`Corso_Python_Campobasso_v1.pptx`**: Presentazione PowerPoint Widescreen 16:9 con note relatore complete.
+* **`Corso_Python_Campobasso_v1.pdf`**: Versione PDF 16:9 per proiezione e stampa.
+* **`assets/`**: Diagrammi architetturali e mockup ad alta risoluzione.
 
 ---
 

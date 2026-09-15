@@ -86,9 +86,11 @@ python_analisi_dati_campobasso/
 │   ├── criteri_valutazione.md           # Rubrica analitica di valutazione (100 punti)
 │   └── soluzione_project_work.py        # Soluzione eseguibile con analisi e grafici
 │
-├── slides/                              # Piano e storyboard didattico
+├── slides/                              # Piano, storyboard e deck presentazioni
 │   ├── README.md                        # Mappa della presentazione
-│   └── piano_slide_storyboard.md        # Storyboard dettagliato di 100 Slide
+│   ├── piano_slide_storyboard_v2.md     # Storyboard ufficiale di 75 Slide
+│   ├── Corso_Python_Campobasso_v1.pptx  # Presentazione PowerPoint (75 slide)
+│   └── Corso_Python_Campobasso_v1.pdf   # Presentazione PDF 16:9 (75 slide)
 │
 └── dispensa/                            # Documentazione teorico-pratica di riferimento
     ├── README.md                        # Struttura del manuale operativo
@@ -102,12 +104,12 @@ python_analisi_dati_campobasso/
 | Modulo | Titolo | Durata | Metodologia | Obiettivo Chiave |
 |:---|:---|:---:|:---:|:---|
 | **Modulo 1** | Python Operativo per l'Analisi Dati | **2 ore** | 20% T / 80% L | Tipi nativi, liste, dizionari, funzioni di calcolo commerciale e pulizia stringhe. |
-| **Modulo 2** | Pandas: Fondamenti e Manipolazione | **4 ore** | 20% T / 80% L | Ingestion Excel, filtri booleani `.loc`/`.iloc`, colonne calcolate, ordinamento. |
-| **Modulo 3** | Data Wrangling, Pulizia e Integrazione | **3 ore** | 20% T / 80% L | Deduplica, imputazione nulli, parsing date miste/seriali, merge anagrafiche. |
+| **Modulo 2** | Pandas: Fondamenti e Manipolazione | **4 ore** | 20% T / 80% L | Ingestion Excel, `.copy()`, filtri booleani `.loc`/`.iloc`, colonne calcolate, ordinamento. |
+| **Modulo 3** | Data Wrangling, Pulizia e Integrazione | **3 ore** | 20% T / 80% L | Deduplica, imputazione `fillna()`, parsing date miste/seriali, merge con validazione integrità. |
 | **Modulo 4** | Visualizzazione Dati e Reporting | **3 ore** | 20% T / 80% L | Matplotlib & Seaborn, trend mensili, barplot, heatmap e Executive Dashboard 2x2. |
-| **Modulo 5** | Automazione Pipeline ETL | **2 ore** | 20% T / 80% L | Ingestion multi-file con `glob`, trasformazione massiva, Parquet ed Excel multi-scheda. |
-| **Modulo 6** | Dashboard Interattive con Streamlit | **4 ore** | 20% T / 80% L | Web app interattiva, sidebar filtri, KPI cards, grafici dinamici, download e simulatore What-If. |
-| **Modulo 7** | Deploy su Server Linux & Produzione | **1 ora** | 20% T / 80% L | Servizio Systemd continuo, auto-restart, gestione demone, journalctl e reverse proxy. |
+| **Modulo 5** | Automazione Pipeline ETL | **2 ore** | 20% T / 80% L | Ingestion con `glob` (filtro `~$`), trasformazione massiva, Parquet ed Excel multi-scheda. |
+| **Modulo 6** | Dashboard Interattive con Streamlit | **4 ore** | 20% T / 80% L | Modello reattivo, sidebar filtri, KPI cards, grafici dinamici, download e simulatore What-If. |
+| **Modulo 7** | Deploy su Server Linux & Produzione | **1 ora** | **Live Demo** | Servizio Systemd continuo, auto-restart, gestione demone, journalctl e reverse proxy. |
 | **Project Work**| Project Work Finale & Presentazione | **3 ore** | 100% Lab | Ingestion filiale Napoli, consolidamento nazionale a 4 filiali, analisi business e report. |
 | **TOTALE** | | **22 ore** | **80% Lab / 20% Teoria** | **Autonomia operativa completa** |
 

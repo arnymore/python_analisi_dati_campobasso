@@ -7,40 +7,40 @@
 
 ## 📊 RIEPILOGO STRUTTURA & RIPARTIZIONE SLIDE
 
-| Modulo Didattico | Durata | N. Slide V1 | N. Slide V2 | Range Slide V2 | Focus Pedagogico V2 |
+| Modulo Didattico | Durata | N. Slide V1 | N. Slide V2 | Range Slide V2 | Modalità Didattica & Focus Pedagogico |
 |:---|:---:|:---:|:---:|:---:|:---|
-| **Modulo 1 – Python Operativo** | 2h | 12 | **8** | Slide 1 – 8 | Sintesi tipi/strutture, focus funzioni commerciali e pulizia stringhe native. |
-| **Modulo 2 – Pandas Fondamenti** | 4h | 18 | **14** | Slide 9 – 22 | Vettorializzazione, indexing `.loc`/`.iloc`, filtri booleani, Top Deals. |
-| **Modulo 3 – Data Wrangling** | 3h | 16 | **12** | Slide 23 – 34 | Deduplica reale, parsing date eterogenee, missing data e merge anagrafica. |
-| **Modulo 4 – Visualizzazione & Report**| 3h | 14 | **11** | Slide 35 – 45 | Matplotlib + Seaborn, bar plot kpi, trend mensile, heatmap e dashboard 2x2. |
-| **Modulo 5 – Automazione Pipeline** | 2h | 10 | **8** | Slide 46 – 53 | Ingestion multi-file con `glob`, trasformazione modulare, Parquet ed Excel. |
-| **Modulo 6 – Dashboard Streamlit** | 4h | 16 | **13** | Slide 54 – 66 | Web App interattiva, sidebar dinamica, metric cards, download e simulatore What-If. |
-| **Modulo 7 – Deploy Server Linux** | 1h | 8 | **4** | Slide 67 – 70 | **Modalità Full Live Demo**: Systemd service, auto-restart, journalctl e Nginx. |
-| **Project Work Finale & Chiusura** | 3h | 6 | **5** | Slide 71 – 75 | Kick-off espansione Napoli, sviluppo guidato, benchmark e debriefing finale. |
-| **TOTALE** | **22h** | **100** | **75** | **1 – 75** | **80% Laboratorio Hands-on / 20% Teoria Operativa** |
+| **Modulo 1 – Python Operativo** | 2h | 12 | **8** | Slide 1 – 8 | Laboratorio hands-on: tipi, strutture native, funzioni commerciali e normalizzazione stringhe. |
+| **Modulo 2 – Pandas Fondamenti** | 4h | 18 | **14** | Slide 9 – 22 | Laboratorio hands-on: vettorializzazione, `.copy()`, indexing `.loc`/`.iloc`, filtri booleani, Top Deals. |
+| **Modulo 3 – Data Wrangling** | 3h | 16 | **12** | Slide 23 – 34 | Laboratorio hands-on: deduplica, date miste, imputazione semplice (`fillna`), merge e validazione integrità. |
+| **Modulo 4 – Visualizzazione & Report**| 3h | 14 | **11** | Slide 35 – 45 | Laboratorio hands-on: Matplotlib + Seaborn, trend mensile, boxplot sconti, heatmap e dashboard 2x2. |
+| **Modulo 5 – Automazione Pipeline** | 2h | 10 | **8** | Slide 46 – 53 | Laboratorio hands-on: scansione `glob` con filtro `~$`, trasformazione modulare, Parquet ed Excel multi-sheet. |
+| **Modulo 6 – Dashboard Streamlit** | 4h | 16 | **13** | Slide 54 – 66 | Laboratorio hands-on: flusso reattivo, sidebar filtri, metric cards, download CSV e simulatore What-If. |
+| **Modulo 7 – Deploy Server Linux** | 1h | 8 | **4** | Slide 67 – 70 | **Live Demo guidata (Show-and-Tell)**: Systemd service, auto-restart, journalctl e Nginx. |
+| **Project Work Finale & Chiusura** | 3h | 6 | **5** | Slide 71 – 75 | Project Work autonomo/guidato: filiale Napoli, pipeline consolidata, benchmark e debriefing. |
+| **TOTALE** | **22h** | **100** | **75** | **Slide 1 – 75** | **80% Laboratorio Hands-on / 20% Teoria Operativa** |
 
 ---
 
-## 🗓️ NUOVA AGENDA DOCENTE (TIMELINE 22 ORE)
+## 🗓️ NUOVA AGENDA DOCENTE (TIMELINE 22 ORE COMPLESSIVE)
 
 * **Sessione 1 (Ore 1 – 4, 4h):**
-  * *Ore 1-2:* Modulo 1 – Python Operativo (Slide 1-8 ➔ **Lab 1**: calcolo KPI e pulizia stringhe).
-  * *Ore 3-4:* Modulo 2 – Pandas Parte 1: Ingestion e Indicizzazione (Slide 9-15 ➔ **Lab 2.1 & 2.2**).
+  * *Ore 1-2:* Modulo 1 – Python Operativo (Slide 1 – 8 ➔ **Lab 1**: calcolo KPI e pulizia stringhe).
+  * *Ore 3-4:* Modulo 2 – Pandas Parte 1: Ingestion, `.copy()` e Indicizzazione (Slide 9 – 15 ➔ **Lab 2.1 & 2.2**).
 * **Sessione 2 (Ore 5 – 8, 4h):**
-  * *Ore 5-6:* Modulo 2 – Pandas Parte 2: Filtri, Calcoli e Ordinamento (Slide 16-22 ➔ **Lab 2.3 & 2.4**).
-  * *Ore 7-8:* Modulo 3 – Data Wrangling Parte 1: Deduplica, Date e Stringhe (Slide 23-28 ➔ **Lab 3.1, 3.2, 3.3**).
+  * *Ore 5-6:* Modulo 2 – Pandas Parte 2: Filtri, Calcoli e Ordinamento (Slide 16 – 22 ➔ **Lab 2.3 & 2.4**).
+  * *Ore 7-8:* Modulo 3 – Data Wrangling Parte 1: Deduplica, Date e Stringhe (Slide 23 – 28 ➔ **Lab 3.1, 3.2, 3.3**).
 * **Sessione 3 (Ore 9 – 12, 4h):**
-  * *Ore 9:* Modulo 3 – Data Wrangling Parte 2: Imputazione e Merge Anagrafica (Slide 29-34 ➔ **Lab 3.4 & 3.5**).
-  * *Ore 10-12:* Modulo 4 – Visualizzazione Dati e Dashboard 2x2 (Slide 35-45 ➔ **Lab 4 completo**).
+  * *Ore 9:* Modulo 3 – Data Wrangling Parte 2: Imputazione `fillna()` e Merge con Controllo Integrità (Slide 29 – 34 ➔ **Lab 3.4 & 3.5**).
+  * *Ore 10-12:* Modulo 4 – Visualizzazione Dati e Dashboard 2x2 (Slide 35 – 45 ➔ **Lab 4 completo**).
 * **Sessione 4 (Ore 13 – 16, 4h):**
-  * *Ore 13-14:* Modulo 5 – Automazione Pipeline ETL (Slide 46-53 ➔ **Lab 5 pipeline batch**).
-  * *Ore 15-16:* Modulo 6 – Streamlit Parte 1: Architettura, Caching e KPI Cards (Slide 54-60 ➔ **Lab 6 starter**).
+  * *Ore 13-14:* Modulo 5 – Automazione Pipeline ETL, Filtro `~$` e Storage Parquet (Slide 46 – 53 ➔ **Lab 5 batch**).
+  * *Ore 15-16:* Modulo 6 – Streamlit Parte 1: Flusso Reattivo, Caching e KPI Cards (Slide 54 – 60 ➔ **Lab 6 starter**).
 * **Sessione 5 (Ore 17 – 20, 4h):**
-  * *Ore 17-18:* Modulo 6 – Streamlit Parte 2: Tabs, Simulatore What-If ed Export (Slide 61-66 ➔ **Lab 6 completo**).
-  * *Ore 19:* Modulo 7 – Deploy Linux in **Live Demo** (Slide 67-70 ➔ Configurazione Systemd a schermo).
-  * *Ore 20:* Project Work – Lancio Traccia e Ingestion Filiale Napoli (Slide 71-72 ➔ **Avvio Project Work**).
+  * *Ore 17-18:* Modulo 6 – Streamlit Parte 2: Tabs, Simulatore What-If ed Export (Slide 61 – 66 ➔ **Lab 6 completo**).
+  * *Ore 19:* Modulo 7 – Deploy Linux in **Live Demo guidata** (Slide 67 – 70 ➔ Configurazione Systemd a schermo).
+  * *Ore 20:* Project Work – Lancio Traccia e Ingestion Filiale Napoli (Slide 71 – 72 ➔ **Avvio Project Work**).
 * **Sessione 6 (Ore 21 – 22, 2h):**
-  * *Ore 21-22:* Project Work – Consolidamento Nazionale, Analisi Strategica e Debriefing (Slide 73-75).
+  * *Ore 21-22:* Project Work – Consolidamento Nazionale, Benchmark, Soluzione Docente e Chiusura (Slide 73 – 75).
 
 ---
 
@@ -63,16 +63,16 @@
 
 | N. | Titolo Slide | Contenuto Chiave (Bullet Points) | Demo Live Docente | Esercitazione Laboratorio |
 |:---|:---|:---|:---|:---|
-| **9** | Dal Foglio Excel al DataFrame Pandas | Perché Pandas, architettura tabellare (Series 1D vs DataFrame 2D), caricamento Excel con `pd.read_excel()` e fogli specifici. | Caricamento live di `dataset/raw/roma.xlsx`. | **Lab 2 - Es. 2.1 (Parte 1)**: Ingestion dati Roma. |
+| **9** | Dal Foglio Excel al DataFrame Pandas | Perché Pandas, architettura tabellare (Series 1D vs DataFrame 2D), caricamento Excel con `pd.read_excel()` e selezione fogli. | Caricamento live di `dataset/raw/roma.xlsx`. | **Lab 2 - Es. 2.1 (Parte 1)**: Ingestion dati Roma. |
 | **10** | Ispezione e Diagnostica Strutturale | `.info()`, `.describe()`, `.shape`, `.columns`, `.dtypes`, `.head()`, identificazione tipi errati e consistenza dati. | Diagnostica rapida DataFrame e statistiche di base. | **Lab 2 - Es. 2.1 (Parte 2)**: Diagnostica colonne. |
-| **11** | Selezione Colonne e Serie | Differenza tra selezione singola colonna `df['col']` (Series) e colonne multiple `df[['c1', 'c2']]` (DataFrame). | Selezione vista commerciale (Cliente, Prodotto, Netto). | Estrazione sottoinsiemi di colonne target. |
+| **11** | Selezione Colonne, Viste e Copie (`.copy()`) | Selezione `df['col']` vs `df[['c1', 'c2']]`; View vs Copy in Pandas, uso esplicito di `.copy()` e prevenzione del `SettingWithCopyWarning`. | Dimostrazione pratica dell'avviso `SettingWithCopyWarning` e risoluzione con `.copy()`. | Estrazione sottoinsiemi sicuri con `.copy()`. |
 | **12** | Indicizzazione: `.iloc[]` vs `.loc[]` | `.iloc` (posizionale per numeri di riga/colonna) vs `.loc` (basato su etichette e condizioni logiche). | Estrazione blocchi di dati con slicing comparato. | **Lab 2 - Es. 2.2**: Estrazione slice `.iloc` e `.loc`. |
 | **13** | Filtri Booleani e Maschere Logiche | Maschere logiche (`df['Canale'] == 'E-commerce'`), conteggio occorrenze, estrazione record filtrati. | Filtro vendite canale digitale. | **Lab 2 - Es. 2.3 (Parte 1)**: Filtro canale vendita. |
 | **14** | Condizioni Multiple: AND (`&`), OR (`\|`), NOT (`~`) | Obbligatorietà delle parentesi tonde `(cond1) & (cond2)`, filtro congiunto su volumi e sconti applicati. | Estrazione ordini con Quantità >= 10 e Sconto > 0. | **Lab 2 - Es. 2.3 (Parte 2)**: Filtri booleani combinati. |
 | **15** | Filtri Avanzati: `.isin()` e `.str.contains()` | Selezione di elenchi con `.isin(['Roma', 'Milano'])`, ricerca testuale flessibile con `.str.contains(..., case=False)`. | Ricerca articoli contenenti "Server" o "Laptop". | Filtri su elenchi prodotti e categorie. |
 | **16** | Vettorializzazione e Colonne Calcolate | Calcolo senza cicli for: `Fatturato_Lordo = Quantita * Prezzo_Unitario`, efficienza vettoriale di Pandas. | Calcolo immediato dell'imponibile su 1.200 righe. | **Lab 2 - Es. 2.4 (Parte 1)**: Calcolo lordo vettoriale. |
 | **17** | Cast Numerico Sicuro con `pd.to_numeric` | Gestione di valori sporchi con `errors='coerce'`, conversione automatica di stringhe anomale in `NaN`. | Pulizia vettoriale prezzi contenenti caratteri spuri. | Bonifica preliminare colonna prezzi. |
-| **18** | Calcolo Sconti, Margini e Fatturato Netto | Calcolo valore sconto in euro, applicazione aliquote IVA, determinazione del `Fatturato_Netto` finale. | Calcolo colonne economiche complete. | Completamento colonne economiche riga. |
+| **18** | Calcolo Sconti, Margini e Fatturato Netto | Calcolo valore sconto in euro, applicazione aliquote IVA, determinazione del `Fatturato_Netto` finale su DataFrame espliciti. | Calcolo colonne economiche complete. | Completamento colonne economiche riga. |
 | **19** | Ordinamento Dati con `.sort_values()` | Ordinamento per singola e multipla colonna (`ascending=[True, False]`), identificazione Top Deals commerciali. | Estrazione dei 10 ordini con maggior fatturato netto. | **Lab 2 - Es. 2.4 (Parte 2)**: Top 10 Deals Roma. |
 | **20** | Statistiche Descrittive e Percentili | `.sum()`, `.mean()`, `.median()`, `.quantile()`, misure di dispersione e analisi ticket medio. | Calcolo KPI generali di filiale. | Calcolo mediane e metriche di vendita. |
 | **21** | Analisi Frequenze con `.value_counts()` | Distribuzione ordini per canale e categoria, frequenze relative percentuali (`normalize=True`). | Calcolo quote percentuali per canale commerciale. | Calcolo market share interno per prodotto. |
@@ -90,10 +90,10 @@
 | **26** | Il Rompicapo delle Date Eterogenee | Date ISO (`2024-03-15`), formati IT (`15/03/2024`), date testuali (`15-Mar-2024`) e seriali Excel (`45506`). | Analisi dei formati disallineati nel foglio Excel. | Ispezione colonna `Data_Vendita`. |
 | **27** | Parsing Robusto con `pd.to_datetime` | Funzione custom di parsing flessibile, conversione seriali Excel (base 1899-12-30) a oggetti `datetime64`. | Esecuzione parsing date miste (100% successo). | **Lab 3 - Es. 3.3 (Parte 1)**: Parsing date eterogenee. |
 | **28** | Feature Engineering Temporale | Estrazione componenti temporali: `.dt.year`, `.dt.month`, `.dt.strftime('%B')`, `.dt.to_period('Q')` per i trimestri. | Creazione colonne Mese, Nome Mese e Trimestre. | **Lab 3 - Es. 3.3 (Parte 2)**: Creazione feature date. |
-| **29** | Diagnosi dei Valori Mancanti (`NaN`) | Rilevazione nulli con `.isna().sum()`, quantificazione percentuale per colonna, impatto sui calcoli. | Mappa riassuntiva dei valori mancanti. | Ispezione valori nulli su tutte le colonne. |
-| **30** | Imputazione Numerica Condizionale | Perché evitare la cancellazione grezza; imputazione con media/mediana per gruppo di prodotto (`transform('mean')`). | Imputazione prezzi e quantità per singolo prodotto. | **Lab 3 - Es. 3.4**: Imputazione e ricalcolo netto. |
+| **29** | Diagnosi dei Valori Mancanti (`NaN`) | Rilevazione nulli con `.isna().sum()`, quantificazione percentuale per colonna, impatto sui calcoli economici. | Mappa riassuntiva dei valori mancanti. | Ispezione valori nulli su tutte le colonne. |
+| **30** | Trattamento Nulli: Imputazione Semplice con `fillna()` | **Percorso Principale:** Imputazione robusta con mediana o media globale (`df['Prezzo'].fillna(df['Prezzo'].median())`); *Nota Extra Didattica:* accenno all'imputazione condizionale per gruppo con `transform()` disponibile nella dispensa di approfondimento. | Applicazione `fillna()` con mediana e confronto impatto. | **Lab 3 - Es. 3.4**: Imputazione e ricalcolo netto. |
 | **31** | Integrazione Relazionale: Concetti di Merge | Modello Fatti-Dimensioni, tipi di Join (Left, Inner, Outer), chiave primaria e chiave esterna (`Codice_Cliente`). | Diagramma relazionale Vendite ➔ Anagrafica Clienti. | Comprensione relazioni tra tabelle. |
-| **32** | Esecuzione del Merge con `pd.merge()` | Sintassi `pd.merge(df_vendite, df_clienti, on='Codice_Cliente', how='left')`, gestione campi non censiti. | Join con foglio `Anagrafica_Clienti` (Settore, Rating). | **Lab 3 - Es. 3.5 (Parte 1)**: Merge anagrafica clienti. |
+| **32** | Esecuzione Merge & Controllo Integrità | Sintassi `pd.merge(how='left')`, validazione unicità con `validate='many_to_one'`, diagnostica join con `indicator=True`, controllo `df.shape` pre/post join per prevenire duplicazioni. | Esecuzione merge anagrafica e verifica conteggio righe. | **Lab 3 - Es. 3.5 (Parte 1)**: Merge anagrafica clienti con verifica integrità. |
 | **33** | Aggregazioni Strategiche con `groupby()` | Paradigma Split-Apply-Combine, raggruppamento multi-livello per Settore cliente e Categoria prodotto. | Calcolo fatturato e sconti per settore merceologico. | Raggruppamento per settore e canale. |
 | **34** | Metriche Multiple Avanzate con `.agg()` | Costruzione del report direzionale con `.agg(Fatturato=('Netto', 'sum'), Ordini=('ID', 'count'), Sconto=('Sconto', 'mean'))`. | Creazione del report per settore ordinato per fatturato. | **Lab 3 - Es. 3.5 (Parte 2)**: Report avanzato `.agg`. |
 
@@ -122,7 +122,7 @@
 | N. | Titolo Slide | Contenuto Chiave (Bullet Points) | Demo Live Docente | Esercitazione Laboratorio |
 |:---|:---|:---|:---|:---|
 | **46** | Architettura della Pipeline ETL Aziendale | Flusso Extract-Transform-Load, passaggio da script interattivo a modulo batch automatico e robusto. | Diagramma di flusso della pipeline di filiale. | Progettazione flusso ETL modulare. |
-| **47** | Scansione Dinamica File System con `glob` | Ricerca automatica file regionali `glob.glob('dataset/raw/*.xlsx')`, gestione percorsi portabili (`os.path`). | Riconoscimento dinamico dei file Roma, Milano, Torino. | **Lab 5 - Fase 1**: Ingestion automatica multi-file. |
+| **47** | Scansione Dinamica & Filtro File Temporanei | Ricerca file regionali `glob.glob('dataset/raw/*.xlsx')`, gestione percorsi con `os.path`, filtro ed esclusione attiva dei file lock/temporanei di Excel (`~$*.xlsx`). | Riconoscimento dinamico ed esclusione file lock temporanei. | **Lab 5 - Fase 1**: Ingestion automatica multi-file. |
 | **48** | Ingestion Massiva e Concatenazione | Lettura ciclica con gestione eccezioni `try/except`, unione verticale con `pd.concat()` per vendite e anagrafiche. | Fusione automatica di 3 filiali in un unico DataFrame. | Concatenazione master dataset. |
 | **49** | Centralizzazione della Trasformazione | Incapsulamento delle regole di wrangling in `trasforma_dataset()`, deduplica, parsing date e imputazioni automatiche. | Esecuzione del cleaning centralizzato su tutto il master. | **Lab 5 - Fase 2**: Funzione di trasformazione. |
 | **50** | Logging Strutturato vs Print Statement | Configurazione del modulo standard `logging`, livelli (INFO, WARNING, ERROR), timestamp e monitoraggio esecuzione. | Tracciamento eventi e metriche della pipeline su console. | Aggiunta log strutturati alla pipeline. |
@@ -136,7 +136,7 @@
 
 | N. | Titolo Slide | Contenuto Chiave (Bullet Points) | Demo Live Docente | Esercitazione Laboratorio |
 |:---|:---|:---|:---|:---|
-| **54** | Introduzione a Streamlit & Pure Python | Paradigma reattivo (script re-run), vantaggi vs BI tradizionali, setup pagina `st.set_page_config(layout='wide')`. | Avvio della prima applicazione Streamlit locale. | Configurazione iniziale Web App. |
+| **54** | Architettura Reattiva di Streamlit & Pure Python | Paradigma reattivo: esecuzione top-to-bottom ad ogni interazione dell'utente con i widget; vantaggi vs BI tradizionali, setup layout wide. | Avvio della prima applicazione Streamlit locale e test reattività. | Configurazione iniziale Web App. |
 | **55** | Caching ad Alte Prestazioni con `@st.cache_data` | Memorizzazione in RAM del dataset Parquet, prevenzione dei ricaricamenti inutili, invalidazione e TTL. | Benchmark prestazioni con/senza decoratore di cache. | Applicazione caching su caricamento Parquet. |
 | **56** | Sidebar & Controlli Utente Dinamici | Barra laterale `st.sidebar`, filtri multi-selezione `st.multiselect()` per filiali, categorie e canali distributivi. | Creazione del pannello filtri interattivo. | **Lab 6 - Es. 6.1 (Parte 1)**: Costruzione sidebar filtri. |
 | **57** | Filtri Temporali con `st.date_input` | Selettore a calendario con range date (min/max), filtraggio dinamico del DataFrame per periodo di vendita. | Filtraggio temporale dinamico dei dati. | **Lab 6 - Es. 6.1 (Parte 2)**: Filtro per intervallo date. |
@@ -153,14 +153,14 @@
 ---
 
 ## 🚀 MODULO 7: DEPLOY SU SERVER LINUX & PRODUZIONE (1 Ora) – [Slide 67 – 70]
-> **MODALITÀ DIDATTICA: FULL LIVE DEMO & SHOW-AND-TELL (100% PRATICO)**
+> **MODALITÀ DIDATTICA ESCLUSIVA: LIVE DEMO GUIDATA (SHOW-AND-TELL 100% PRATICO)**
 
 | N. | Titolo Slide | Contenuto Chiave (Bullet Points) | Demo Live Docente | Esercitazione Laboratorio |
 |:---|:---|:---|:---|:---|
-| **67** | Dal Laptop alla Produzione 24/7 | Perché il deploy su server: centralizzazione dati, disponibilità continua, sicurezza; architettura Demone ➔ Systemd ➔ Nginx. | Connessione SSH al server Linux e panoramica ambiente. | Osservazione e consultazione `guida_deploy.md`. |
-| **68** | Creazione del Servizio Demone con Systemd | Struttura del file unit `/etc/systemd/system/dashboard_vendite.service`, sezioni `[Unit]`, `[Service]` (User, ExecStart, Restart=always). | Creazione a schermo del file `.service` con `setup_service.sh`. | **Live Demo**: Provisioning file systemd service. |
-| **69** | Amministrazione del Servizio con `systemctl` | Comandi essenziali: `systemctl daemon-reload`, `enable` (boot automatico), `start`, `status`, `restart`, `stop`. | Avvio e verifica stato attivo (`running`) del servizio. | **Live Demo**: Gestione ciclo di vita servizio. |
-| **70** | Monitoraggio Log con `journalctl` & Cenni Nginx | Diagnostica log in tempo reale `journalctl -u dashboard_vendite.service -f`, reverse proxy Nginx su porta 80, firewall UFW. | Simulazione riavvio per crash e ispezione log in diretta. | **Live Demo**: Consultazione log di produzione. |
+| **67** | Dal Laptop alla Produzione 24/7 | Perché il deploy su server: centralizzazione dati, disponibilità continua, sicurezza; architettura Demone ➔ Systemd ➔ Nginx. | Connessione SSH al server Linux e panoramica ambiente. | **Live Demo guidata**: Osservazione e consultazione `guida_deploy.md`. |
+| **68** | Creazione del Servizio Demone con Systemd | Struttura del file unit `/etc/systemd/system/dashboard_vendite.service`, sezioni `[Unit]`, `[Service]` (User, ExecStart, Restart=always). | Creazione a schermo del file `.service` con `setup_service.sh`. | **Live Demo guidata**: Provisioning file systemd service. |
+| **69** | Amministrazione del Servizio con `systemctl` | Comandi essenziali: `systemctl daemon-reload`, `enable` (boot automatico), `start`, `status`, `restart`, `stop`. | Avvio e verifica stato attivo (`running`) del servizio. | **Live Demo guidata**: Gestione ciclo di vita servizio. |
+| **70** | Monitoraggio Log con `journalctl` & Cenni Nginx | Diagnostica log in tempo reale `journalctl -u dashboard_vendite.service -f`, reverse proxy Nginx su porta 80, firewall UFW. | Simulazione riavvio per crash e ispezione log in diretta. | **Live Demo guidata**: Consultazione log di produzione. |
 
 ---
 
